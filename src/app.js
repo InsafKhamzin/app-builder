@@ -1,6 +1,6 @@
 const express = require('express');
 const logger = require('./services/logger');
-const errorMiddleware = require('./api/middlewares/error');
+const errorMiddleware = require('./api/middlewares/serverError');
 
 const connectDb = require('./loaders/db');
 
@@ -10,16 +10,17 @@ const app = express();
 app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => {
-    res.send('API is running')
+    res.send(`API is running. Mode: ${process.env.NODE_ENV}`)
 });
-
-app.use(errorMiddleware);
-
 
 const PORT = process.env.PORT || 3000;
 
 //routes
 app.use('/api/auth', require('./api/routes/auth'));
+app.use('/api/app', require('./api/routes/app'));
+
+app.use(errorMiddleware);
+
 
 //init db
 connectDb()
