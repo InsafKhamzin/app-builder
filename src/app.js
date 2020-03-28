@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 3000;
 //routes
 app.use('/api/auth', require('./api/routes/auth'));
 app.use('/api/app', require('./api/routes/app'));
+app.use('/api/app/:appId/product', require('./api/routes/product'));
 
 app.use(errorMiddleware);
 

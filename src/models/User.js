@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const UserSchema = new mongoose.Schema({
+const UserSchema = new Schema({
     email: {
         type: String,
         required: true,
         unique: true
     },
-    password:{
+    password: {
         type: String,
         required: true
     },
@@ -29,7 +30,7 @@ const UserSchema = new mongoose.Schema({
                 type: String,
                 required: true
             },
-            createdAt:{
+            createdAt: {
                 type: Date,
                 required: true
             },
@@ -38,7 +39,11 @@ const UserSchema = new mongoose.Schema({
                 required: true
             }
         }
-    ]
-}, { versionKey: false });
+    ],
+    apps: [{
+        type: Schema.Types.ObjectId,
+        ref: 'app'
+    }]
+});
 
 module.exports = User = mongoose.model('user', UserSchema);

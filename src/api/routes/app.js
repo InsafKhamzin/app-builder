@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const AppService = require('../../services/app');
 const ObjectId = require('mongoose').Types.ObjectId;
+const auth = require('../middlewares/auth');
 
 const appService = new AppService();
 
@@ -45,6 +46,22 @@ router.get('/:appId', async (req, res, next) => {
             return res.status(400).json({ msg: 'Invalid app id' })
         }
         const app = await appService.getApp(req.params.appId);
+        res.json(app);
+    } catch (error) {
+        next(error);
+    }
+});
+
+router.put('/:appId/link', [auth], async (req, res, next) => {
+    try {
+        const appId = req.params.appId;
+        const userId = req.user.id;
+
+        if (!ObjectId.isValid(req.params.appId)) {
+            return res.status(400).json({ msg: 'Invalid app id' })
+        }
+
+        const app = await appService.linkToUser({appId, userId});
         res.json(app);
     } catch (error) {
         next(error);

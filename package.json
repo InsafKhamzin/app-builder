@@ -4,6 +4,7 @@
   "description": "app-builder",
   "main": "index.js",
   "dependencies": {
+    "aws-sdk": "^2.648.0",
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "config": "^3.3.0",

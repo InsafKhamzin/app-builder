@@ -9,7 +9,11 @@ const AppSchema = new Schema({
     created: {
         type: Date,
         default: Date.now
+    },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'user'
     }
-}, { versionKey: false });
+});
 
 module.exports = App = mongoose.model('app', AppSchema);
