@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const logger = require('../../services/logger');
 const AppService = require('../../services/app');
 const ObjectId = require('mongoose').Types.ObjectId;
 

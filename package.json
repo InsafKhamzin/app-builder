@@ -11,6 +11,8 @@
     "express-validator": "^6.4.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.5",
+    "password-validator": "^5.0.3",
+    "uuid": "^7.0.2",
     "winston": "^3.2.1"
   },
   "devDependencies": {

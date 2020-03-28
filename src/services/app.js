@@ -1,4 +1,4 @@
-const logger = require('../services/logger');
+const logger = require('../utils/logger');
 const App = require('../models/App');
 const ClientError = require('../common/clientError');
 

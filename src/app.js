@@ -1,5 +1,5 @@
 const express = require('express');
-const logger = require('./services/logger');
+const logger = require('./utils/logger');
 const errorMiddleware = require('./api/middlewares/serverError');
 
 const connectDb = require('./loaders/db');
