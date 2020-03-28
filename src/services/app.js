@@ -1,4 +1,4 @@
-const logger = require('../services/logger');
+const logger = require('../utils/logger');
 const App = require('../models/App');
 const ClientError = require('../common/clientError');
 
@@ -38,6 +38,24 @@ module.exports = class AppService{
             if(!app){
                 throw new ClientError('App not found', 404);
             }
+            return app;
+        } catch (error) {
+            throw error;
+        }
+    }
+
+    async linkToUser({appId, userId}){
+        try {
+            const app = await App.findById(appId);
+            if(!app){
+                throw new ClientError('App not found', 404);
+            }
+            if(app.user){
+                throw new ClientError('App already linked', 400);
+            }
+            app.user = userId;
+            await app.save()
+
             return app;
         } catch (error) {
             throw error;

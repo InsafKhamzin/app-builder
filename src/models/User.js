@@ -1,18 +1,21 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const UserSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
+const UserSchema = new Schema({
     email: {
         type: String,
         required: true,
         unique: true
     },
-    password:{
+    password: {
         type: String,
         required: true
+    },
+    firstName: {
+        type: String
+    },
+    lastName: {
+        type: String
     },
     avatar: {
         type: String
@@ -20,7 +23,27 @@ const UserSchema = new mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
-    }
-}, { versionKey: false });
+    },
+    refreshTokens: [
+        {
+            refreshToken: {
+                type: String,
+                required: true
+            },
+            createdAt: {
+                type: Date,
+                required: true
+            },
+            expiresAt: {
+                type: Date,
+                required: true
+            }
+        }
+    ],
+    apps: [{
+        type: Schema.Types.ObjectId,
+        ref: 'app'
+    }]
+});
 
 module.exports = User = mongoose.model('user', UserSchema);
