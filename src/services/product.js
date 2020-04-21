@@ -1,22 +1,33 @@
 const logger = require('../utils/logger');
-const App = require('../models/App');
 const Product = require('../models/Product');
+const Category = require('../models/Category');
 const ClientError = require('../common/clientError');
 
 module.exports = class ProductService {
-    async addProduct({ appId, userId, name, description, price }) {
+    async addProduct({ appId, name, description, price, categoryId }) {
         try {
-            const app = await App.findById(appId);
-            validateAppAndUser(app, userId);
+            const category = await Category.findOne({ app: appId, _id: categoryId });
+            if (!category) {
+                throw new ClientError('Category not found', 404);
+            }
+            if (category.children && category.children.length > 0) {
+                throw new ClientError('Category contains subcategories', 400);
+            }
 
             const newProduct = new Product({
-                app: app._id,
+                app: appId,
                 name: name,
                 description: description,
                 price: price,
                 currency: 'RUB', //TODO
+                category: category._id
             });
             const product = await newProduct.save();
+
+            //increment number of products in category
+            category.productCount++;
+            await category.save();
+
             return product;
         } catch (error) {
             logger.error(`ProductService addProduct ex: ${error.message}`);
@@ -24,53 +35,50 @@ module.exports = class ProductService {
         }
     }
 
-    async deleteProduct(appId, productId, userId) {
+    async deleteProduct(appId, productId) {
         try {
-            const app = await App.findById(appId);
-            validateAppAndUser(app, userId);
-
-            await Product.findByIdAndDelete(productId);
+            const product = await Product.findOneAndDelete({ app: appId, _id: productId });
+            if(product && product.category){
+                const category = await Category.findById(product.category);
+                category.productCount--;
+                await category.save();
+            }
         } catch (error) {
-            logger.error(`ProductService addProduct ex: ${error.message}`);
+            logger.error(`ProductService deleteProduct ex: ${error.message}`);
             throw error;
         }
     }
 
-    async getById(appId, productId, userId) {
+    async getById(appId, productId) {
         try {
-            const app = await App.findById(appId);
-            validateAppAndUser(app, userId);
-
-            const product = await Product.findById(productId);
-            if(!product){
+            const product = await Product.findOne({ app: appId, _id: productId });
+            if (!product) {
                 throw new ClientError('Product not found', 404);
             }
             return product;
         } catch (error) {
-            logger.error(`ProductService addProduct ex: ${error.message}`);
+            logger.error(`ProductService getById ex: ${error.message}`);
             throw error;
         }
     }
 
-    async getAll(appId, userId) {
+    async getAll(appId) {
         try {
-            const app = await App.findById(appId);
-            validateAppAndUser(app, userId);
-
             const products = Product.find({ app: appId });
             return products;
         } catch (error) {
-            logger.error(`ProductService addProduct ex: ${error.message}`);
+            logger.error(`ProductService getAll ex: ${error.message}`);
             throw error;
         }
     }
-}
 
-function validateAppAndUser(app, userId) {
-    if (!app) {
-        throw new ClientError('App not found', 404)
-    }
-    if (!app.user || app.user.toString() !== userId) {
-        throw new ClientError('App does not belong to user', 403)
+    async getByCategory(appId, categoryId) {
+        try {
+            const products = Product.find({ app: appId, category: categoryId });
+            return products;
+        } catch (error) {
+            logger.error(`ProductService getByCategory ex: ${error.message}`);
+            throw error;
+        }
     }
 }
