@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 
 const logger = require('../utils/logger');
 const User = require('../models/User');
+const App = require('../models/App');
 const ClientError = require('../common/clientError');
 const { createToken, createRefresh } = require('../utils/token');
 
@@ -61,7 +62,10 @@ module.exports = class AuthService {
             user.refreshTokens.unshift({ refreshToken, createdAt, expiresAt });
             await user.save();
 
-            return { token, refreshToken };
+            let apps = [];
+            apps = await App.find({user: user._id}, '_id');
+
+            return { token, refreshToken, apps };
         } catch (error) {
             logger.error(`AuthService loginUser ex: ${error.message}`);
             throw error;

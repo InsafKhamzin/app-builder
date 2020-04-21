@@ -39,11 +39,7 @@ const UserSchema = new Schema({
                 required: true
             }
         }
-    ],
-    apps: [{
-        type: Schema.Types.ObjectId,
-        ref: 'app'
-    }]
+    ]
 });
 
 module.exports = User = mongoose.model('user', UserSchema);
