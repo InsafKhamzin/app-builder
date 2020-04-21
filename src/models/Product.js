@@ -32,7 +32,11 @@ const ProductSchema = new Schema({
                 type: String
             }
         }
-    ]
+    ],
+    category: {
+        type: Schema.Types.ObjectId,
+        ref: 'category'
+    }
 
 });
 
