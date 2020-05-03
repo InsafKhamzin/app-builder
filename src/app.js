@@ -2,6 +2,8 @@ const express = require('express');
 const logger = require('./utils/logger');
 const errorMiddleware = require('./api/middlewares/serverError');
 const notFoundMiddleware = require('./api/middlewares/notFoundMiddleware');
+const authMiddleware = require('./api/middlewares/auth');
+const { appIdValidation, appIdToUserValidation } = require('./api/validators/appValidator');
 
 const connectDb = require('./loaders/db');
 
@@ -16,13 +18,25 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-//routes
-app.use('/api/auth', require('./api/routes/auth'));
-app.use('/api/app', require('./api/routes/app'));
+//BUILDER ROUTES
+app.use('/builder/auth', require('./api/routes/builder/auth'));
+app.use('/builder/app', require('./api/routes/builder/app'));
 
-app.use('/api/app/:appId/product', require('./api/routes/product'));
-app.use('/api/app/:appId/category', require('./api/routes/category'));
+//controller scoped middlewares and validators
+app.use('/builder/app/:appId/product', authMiddleware);
+app.use('/builder/app/:appId/product', appIdToUserValidation);
+app.use('/builder/app/:appId/product', require('./api/routes/builder/product'));
 
+
+app.use('/builder/app/:appId/category', authMiddleware);
+app.use('/builder/app/:appId/category', appIdToUserValidation);
+app.use('/builder/app/:appId/category', require('./api/routes/builder/category'));
+
+//CLIENT ROUTES
+app.use('/client/:appId/auth', require('./api/routes/client/auth'));
+
+
+//global middlewares
 app.use(errorMiddleware);
 app.use(notFoundMiddleware);
 

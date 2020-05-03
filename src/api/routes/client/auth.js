@@ -1,16 +1,17 @@
 const express = require('express');
-const router = express.Router();
-const { check, validationResult } = require('express-validator');
-const AuthService = require('../../services/auth');
-const auth = require('../middlewares/auth');
+const router = express.Router({ mergeParams: true });
+const { check, param, validationResult } = require('express-validator');
+const AuthService = require('../../../services/authCustomer');
+const auth = require('../../middlewares/auth');
 
 const authService = new AuthService();
 
-// @route POST api/auth/register
-// @desc register user
+// @route POST auth/register
+// @desc register customer
 
 router.post('/register',
     [
+        param('appId').isMongoId(),
         check('email', 'Invalid email format').isEmail(),
         check('password', 'Password is required').notEmpty()
     ],
@@ -29,12 +30,11 @@ router.post('/register',
     });
 
 
-// @route POST api/auth/login
+// @route POST auth/login
 // @desc login user
 
 router.post('/login',
     [
-        check('email', 'Email is required').notEmpty(),
         check('email', 'Invalid email format').isEmail(),
         check('password', 'Password is required').notEmpty()
     ],
@@ -52,7 +52,7 @@ router.post('/login',
         }
     });
 
-// @route PUT api/auth/refresh
+// @route PUT auth/refresh
 // @desc refresh token
 
 router.put('/refresh',
@@ -76,6 +76,9 @@ router.put('/refresh',
             next(error);
         }
     });
+
+// @route DELETE auth/revoke
+// @desc revoke token
 
 router.delete('/revoke',
     [
