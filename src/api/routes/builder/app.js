@@ -16,6 +16,7 @@ router.post('/', async (req, res, next) => {
         }
         const app = await appService.createApp(JSON.stringify(req.body));
         res.json(app);
+        
     } catch (error) {
         next(error);
     }

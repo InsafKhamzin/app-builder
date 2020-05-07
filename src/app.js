@@ -3,6 +3,7 @@ const logger = require('./utils/logger');
 const errorMiddleware = require('./api/middlewares/serverError');
 const notFoundMiddleware = require('./api/middlewares/notFoundMiddleware');
 const authMiddleware = require('./api/middlewares/auth');
+const config = require('config');
 const { appIdValidation, appIdToUserValidation } = require('./api/validators/appValidator');
 
 const connectDb = require('./loaders/db');
@@ -12,29 +13,31 @@ const app = express();
 //parse json
 app.use(express.json({ extended: false }));
 
+const currentApp = config.get('currentApp');
+
 app.get('/', (req, res) => {
-    res.send(`API is running. Mode: ${process.env.NODE_ENV}`)
+    res.send(`API is running. Mode: ${process.env.NODE_ENV} App: ${currentApp}`)
 });
 
 const PORT = process.env.PORT || 3000;
 
-//BUILDER ROUTES
-app.use('/builder/auth', require('./api/routes/builder/auth'));
-app.use('/builder/app', require('./api/routes/builder/app'));
+if (currentApp === 'BUILDER' || currentApp ==='DEV') {
+    //BUILDER ROUTES
+    app.use('/builder/auth', require('./api/routes/builder/auth'));
+    app.use('/builder/app', require('./api/routes/builder/app'));
 
-//controller scoped middlewares and validators
-app.use('/builder/app/:appId/product', authMiddleware);
-app.use('/builder/app/:appId/product', appIdToUserValidation);
-app.use('/builder/app/:appId/product', require('./api/routes/builder/product'));
+    app.use('/builder/app/:appId/product', authMiddleware);//controller scoped middlewares and validators
+    app.use('/builder/app/:appId/product', appIdToUserValidation);
+    app.use('/builder/app/:appId/product', require('./api/routes/builder/product'));
 
-
-app.use('/builder/app/:appId/category', authMiddleware);
-app.use('/builder/app/:appId/category', appIdToUserValidation);
-app.use('/builder/app/:appId/category', require('./api/routes/builder/category'));
-
-//CLIENT ROUTES
-app.use('/client/:appId/auth', require('./api/routes/client/auth'));
-
+    app.use('/builder/app/:appId/category', authMiddleware);
+    app.use('/builder/app/:appId/category', appIdToUserValidation);
+    app.use('/builder/app/:appId/category', require('./api/routes/builder/category'));
+}
+if (currentApp === 'CLIENT' || currentApp ==='DEV') {
+    //CLIENT ROUTES
+    app.use('/client/:appId/auth', require('./api/routes/client/auth'));
+}
 
 //global middlewares
 app.use(errorMiddleware);

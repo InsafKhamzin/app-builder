@@ -10,7 +10,7 @@ module.exports.categoryUpdateValidation = [
     param('categoryId', 'Invalid category id'),
     body('name', 'Name is required').notEmpty(),
     validate
-];
+]; 
 
 module.exports.categoryDeleteValidation = [
     param('categoryId', 'Invalid category id').isMongoId(),
