@@ -1,4 +1,5 @@
-{
+{    
+    "currentApp": "CURRENT_APP",
     "mongoURI": "MONGO_URI",
     "jwtSecret": "JWT_SECRET",
     "accessTokenExp": "ACCESS_TOKEN_EXP",
