@@ -22,17 +22,10 @@ const ProductSchema = new Schema({
         type: String,
         required: true
     },
-    images: [
-        {
-            url: {
-                type: String,
-                required: true
-            },
-            caption: {
-                type: String
-            }
-        }
-    ],
+    images: [{
+        type: Schema.Types.ObjectId,
+        ref: 'image'
+    }],
     category: {
         type: Schema.Types.ObjectId,
         ref: 'category'
