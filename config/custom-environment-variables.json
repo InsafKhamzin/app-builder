@@ -1,6 +1,15 @@
 {
     "mongoURI": "MONGO_URI",
-    "jwtSecret":"JWT_SECRET",
-    "accessTokenExp":"ACCESS_TOKEN_EXP",
-    "refreshTokenExp":"REFRESH_TOKEN_EXP"
+    "jwtSecret": "JWT_SECRET",
+    "accessTokenExp": "ACCESS_TOKEN_EXP",
+    "refreshTokenExp": "REFRESH_TOKEN_EXP",
+    "cloudinary": {
+        "cloudName": "CLOUDINARY_CLOUD_NAME",
+        "apiKey": "CLOUDINARY_API_KEY",
+        "apiSecret": "CLOUDINARY_API_SECRET"
+    },    
+    "imageUpload": {
+        "maxSizeMb": "IMAGE_UPLOAD_SIZE",
+        "allowedTypesRegex": "IMAGE_UPLOAD_TYPE_REGEX"
+    }
 }

@@ -6,7 +6,7 @@ const storage = multer.memoryStorage()
 module.exports = multer(
     {
         storage: storage,
-        limits: { fileSize: config.get('imageUpload.maxSizeMb') * 1024 * 1024 },
+        limits: { fileSize: parseInt(config.get('imageUpload.maxSizeMb')) * 1024 * 1024 },
         fileFilter: function (req, file, cb) {
             const fileRegex = new RegExp(config.get('imageUpload.allowedTypesRegex'));
             const fileName = file.originalname;
