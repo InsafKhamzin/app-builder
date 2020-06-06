@@ -10,19 +10,28 @@ const {
 
 const productService = new ProductService();
 
+// @route POST product/
+// @desc add product
+// @param name
+// @param description
+// @param price
+// @param categoryId
+
 router.post('/', productAddValidation,
     async (req, res, next) => {
         try {
-            const { name, description, price, categoryId } = req.body;
+            const { name, description, price, categoryId, images } = req.body;
             const appId = req.params.appId
 
-            const result = await productService.addProduct({ appId, name, description, price, categoryId });
+            const result = await productService.addProduct({ appId, name, description, price, categoryId, images });
             res.json(result);
         } catch (error) {
             next(error);
         }
     });
 
+// @route DELETE product/:productId
+// @desc delete product
 
 router.delete('/:productId', productIdValidation,
     async (req, res, next) => {
@@ -36,6 +45,9 @@ router.delete('/:productId', productIdValidation,
         }
     });
 
+// @route GET product/:productId
+// @desc get product
+
 router.get('/:productId', productIdValidation,
     async (req, res, next) => {
         try {
@@ -47,6 +59,10 @@ router.get('/:productId', productIdValidation,
             next(error);
         }
     });
+
+// @route GET product/
+// @desc get all products
+// @query categoryId - all product by categoryId (optional)
 
 router.get('/', productGetByCategoryValidation,
     async (req, res, next) => {

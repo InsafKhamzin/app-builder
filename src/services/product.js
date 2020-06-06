@@ -4,7 +4,7 @@ const Category = require('../models/Category');
 const ClientError = require('../common/clientError');
 
 module.exports = class ProductService {
-    async addProduct({ appId, name, description, price, categoryId }) {
+    async addProduct({ appId, name, description, price, categoryId, images }) {
         try {
             const category = await Category.findOne({ app: appId, _id: categoryId });
             if (!category) {
@@ -20,15 +20,17 @@ module.exports = class ProductService {
                 description: description,
                 price: price,
                 currency: 'RUB', //TODO
-                category: category._id
+                category: category._id,
+                images
             });
             const product = await newProduct.save();
+            const productWithImages = await product.populate('images').execPopulate();
 
             //increment number of products in category
             category.productCount++;
             await category.save();
 
-            return product;
+            return productWithImages;
         } catch (error) {
             logger.error(`ProductService addProduct ex: ${error.message}`);
             throw error;
@@ -38,7 +40,7 @@ module.exports = class ProductService {
     async deleteProduct(appId, productId) {
         try {
             const product = await Product.findOneAndDelete({ app: appId, _id: productId });
-            if(product && product.category){
+            if (product && product.category) {
                 const category = await Category.findById(product.category);
                 category.productCount--;
                 await category.save();

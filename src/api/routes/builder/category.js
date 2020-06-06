@@ -11,6 +11,11 @@ const {
 
 const categoryService = new CategoryService();
 
+// @route POST category/
+// @desc create category
+// @param name - category name
+// @param parentCategoryId - parent category (optional)
+
 router.post('/', categoryAddValidation,
     async (req, res, next) => {
         try {
@@ -24,11 +29,14 @@ router.post('/', categoryAddValidation,
         }
     });
 
+// @route PUT category/:categoryId'
+// @desc update category
+
 router.put('/:categoryId', categoryUpdateValidation,
     async (req, res, next) => {
         try {
             const { name } = req.body;
-            const appId = req.params.appId;
+            const appId = req.params.appId;  
             const categoryId = req.params.categoryId;
 
             const result = await categoryService.updateCategory({ appId, categoryId, name });
@@ -37,6 +45,9 @@ router.put('/:categoryId', categoryUpdateValidation,
             next(error);
         }
     });
+
+// @route DELETE category/:categoryId'
+// @desc delete category
 
 router.delete('/:categoryId', categoryDeleteValidation,
     async (req, res, next) => {
@@ -50,6 +61,9 @@ router.delete('/:categoryId', categoryDeleteValidation,
             next(error);
         }
     });
+
+// @route GET category/
+// @desc get category tree
 
 router.get('/', async (req, res, next) => {
     try {

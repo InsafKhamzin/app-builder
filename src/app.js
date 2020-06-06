@@ -4,11 +4,14 @@ const errorMiddleware = require('./api/middlewares/serverError');
 const notFoundMiddleware = require('./api/middlewares/notFoundMiddleware');
 const authMiddleware = require('./api/middlewares/auth');
 const config = require('config');
-const { appIdValidation, appIdToUserValidation } = require('./api/validators/appValidator');
+const { appIdToUserValidation } = require('./api/validators/appValidator');
+
 
 const connectDb = require('./loaders/db');
 
 const app = express();
+
+app.use(require('express-status-monitor')())
 
 //parse json
 app.use(express.json({ extended: false }));
@@ -33,6 +36,8 @@ if (currentApp === 'BUILDER' || currentApp ==='DEV') {
     app.use('/builder/app/:appId/category', authMiddleware);
     app.use('/builder/app/:appId/category', appIdToUserValidation);
     app.use('/builder/app/:appId/category', require('./api/routes/builder/category'));
+
+    app.use('/builder/image', require('./api/routes/builder/image'));
 }
 if (currentApp === 'CLIENT' || currentApp ==='DEV') {
     //CLIENT ROUTES
