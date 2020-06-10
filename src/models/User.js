@@ -37,7 +37,8 @@ const UserSchema = new Schema({
             expiresAt: {
                 type: Date,
                 required: true
-            }
+            },
+            _id: false
         }
     ]
 });

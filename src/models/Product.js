@@ -14,11 +14,27 @@ const ProductSchema = new Schema({
     description: {
         type: String
     },
-    price: {
+    totalQuantity:{
+        type: Number,
+        default: 0
+    },
+    totalOrders:{
+        type: Number,
+        default: 0
+    },
+    totalReviews:{
+        type: Number,
+        default: 0
+    },
+    rating: {
+        type: Number,
+        default: 0.0
+    },
+    price: {//DELETE
         type: Number,
         required: true
     },
-    currency: {
+    currency: {//DELETE
         type: String,
         required: true
     },
@@ -29,7 +45,43 @@ const ProductSchema = new Schema({
     category: {
         type: Schema.Types.ObjectId,
         ref: 'category'
-    }
+    },
+    attributes: [{
+        type: String
+    }],
+    comments: [{
+        commentType: {
+            type: String,
+            required: true
+        },
+        comment: {
+            type: String,
+            required: true
+        }
+    }],
+    tags: [{
+        type: String
+    }],
+    characteristics: [{
+        title: {
+            type: String,
+            required: true
+        },
+        values: [{
+            title: {
+                type: String,
+                require: true,
+            },
+            value: {
+                type: String,
+                required: true
+            }
+        }]
+    }],
+    variants: [{
+        type: Schema.Types.ObjectId,
+        ref: 'product_variant'
+    }]
 
 });
 
