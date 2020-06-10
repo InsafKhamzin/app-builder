@@ -4,11 +4,51 @@ const { validate } = require('./validate');
 module.exports.productAddValidation = [
     body('categoryId', 'Invalid category id').isMongoId(),
     body('name', 'Name is required').notEmpty(),
-    body('price', 'Invalid price').isDecimal(),
+    body('price', 'Invalid price').isNumeric(),
+
+    //if images field exist then it must be an array with mongoDb ids.
     body('images')
         .if(body('images').exists())
-        .isArray({min: 1}).withMessage("Must be a non-empty array"),
+        .isArray({ min: 1 }).withMessage('Must be a non-empty array'),
     body('images.*', 'Invalid image id').isMongoId(),
+
+    //characteristtics validation
+    body('characteristics')
+        .if(body('characteristics').exists())
+        .isArray({ min: 1 }).withMessage('Must be a non-empty array'),
+    body('characteristics.*._id', 'Invalid characteristic id').isMongoId(),
+    body('characteristics.*.name', 'Characteristic name is required').notEmpty(),
+    body('characteristics.*.options').isArray({ min: 1 }).withMessage('Must be a non-empty array'),
+    body('characteristics.*.options.*._id', 'Invalid characteristic option id').isMongoId(),
+    body('characteristics.*.options.*.name', 'Characteristic option name is required').notEmpty(),
+    body('characteristics.*.options.*.value', 'Characteristic option value is required').notEmpty(),
+
+    //variants validation
+    body('variants')
+        .if(body('variants').exists())
+        .isArray({ min: 1 }).withMessage('Must be a non-empty array'),
+
+    //if variants are being added then characteristics[] must exist
+    body('characteristics', 'characteristics[] must be provided')
+        .if(body('variants').exists())
+        .exists(),
+
+    //check if values provided in variants[] associated with info in characteristics
+    body('variants.*').custom((variant, {req}) =>{
+        const associateCharIdx = req.body.characteristics.findIndex(x => x._id == variant.characteristic);
+        if(associateCharIdx === -1){
+            throw Error("No associate characteristic in characteristics[]");
+        }
+        const associateOptionIdx = req.body.characteristics[associateCharIdx].options.findIndex(x => x._id == variant.option);
+        if(associateOptionIdx === -1){
+            throw Error("No associate option in characteristics[].options[]");
+        }
+        return true;
+    }),    
+
+    body('variants.*.price', 'Invalid variants price').isNumeric(),
+    body('variants.*.quantity', 'Invalid variants quantity').isNumeric(),
+
     validate
 ];
 
