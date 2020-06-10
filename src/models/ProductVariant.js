@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const ProductVariantSchema = new Schema({
     productId: {
         type: Schema.Types.ObjectId,
-        ref: 'product'
+        ref: 'product',
+        index: true
     },
     quantity: {
         type: Number,
