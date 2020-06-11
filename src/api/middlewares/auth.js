@@ -6,9 +6,10 @@ module.exports = function (req, res, next) {
         return res.status(401).json({ errors: [{ msg: 'Access denied' }] });
     }
 
-    const user = decodeToken(token);
+    const { user, apps } = decodeToken(token);
     if (user) {
         req.user = user;
+        req.apps = apps;
         next();
     } else {
         res.status(401).json({ errors: [{ msg: 'Invalid token' }] });

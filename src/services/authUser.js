@@ -24,7 +24,8 @@ module.exports = class AuthService {
             const tokenPayload = {
                 user: {
                     id: user.id
-                }
+                },
+                apps: []
             };
             const token = createToken(tokenPayload);
             const { refreshToken, createdAt, expiresAt } = createRefresh();
@@ -50,11 +51,14 @@ module.exports = class AuthService {
             if (!isMatch) {
                 throw new ClientError('Invalid credentials', 400);
             }
+            let apps = []
+            apps = await App.find({ user: user._id }, '_id');
 
             const tokenPayload = {
                 user: {
                     id: user.id
-                }
+                },
+                apps: [...apps]
             };
             const token = createToken(tokenPayload);
             const { refreshToken, createdAt, expiresAt } = createRefresh();
@@ -62,8 +66,6 @@ module.exports = class AuthService {
             user.refreshTokens.unshift({ refreshToken, createdAt, expiresAt });
             await user.save();
 
-            let apps = [];
-            apps = await App.find({user: user._id}, '_id');
 
             return { token, refreshToken, apps };
         } catch (error) {
@@ -79,22 +81,26 @@ module.exports = class AuthService {
                 throw new ClientError('User not found', 404);
             }
 
+            let apps = []
+            apps = await App.find({ user: user._id }, '_id');
+
             const refreshTokenDb = user.refreshTokens.find(t => t.refreshToken === refreshToken);
-            if(!refreshTokenDb){
+            if (!refreshTokenDb) {
                 throw new ClientError('Token not found', 404);
             }
 
-            if(refreshTokenDb.expiresAt < Date.now()){
+            if (refreshTokenDb.expiresAt < Date.now()) {
                 throw new ClientError('Token expired', 401);
             }
 
             const tokenPayload = {
                 user: {
                     id: user.id
-                }
+                },
+                apps: [...apps]
             };
             const token = createToken(tokenPayload);
-            return({token});
+            return ({ token });
         } catch (error) {
             logger.error(`AuthService refresh ex: ${error.message}`);
             throw error;
@@ -109,7 +115,7 @@ module.exports = class AuthService {
             }
 
             const refreshTokenIdx = user.refreshTokens.findIndex(t => t.refreshToken === refreshToken);
-            if(refreshTokenIdx === -1){
+            if (refreshTokenIdx === -1) {
                 throw new ClientError('Token not found', 404);
             }
 

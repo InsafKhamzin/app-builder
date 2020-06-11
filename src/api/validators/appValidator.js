@@ -14,12 +14,16 @@ module.exports.appIdToUserValidation = [
         .bail()
         .custom(async (appId, { req }) => {
             const userId = req.user.id;
-            const app = await App.findById(appId);
+            const apps = req.apps;
+
+            //first check user apps in token
+            let app = apps.find(x => x._id === appId);
             if (!app) {
-                throw new Error('App not found')
+                //if empty check in database
+                app = await App.find({ _id: appId, user: userId });
             }
-            if (!app.user || app.user.toString() !== userId) {
-                throw new Error('Access denied')
+            if (!app) {
+                throw new Error('Invalid app id')
             }
         }),
     validate
