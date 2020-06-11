@@ -57,6 +57,7 @@ module.exports = class ProductService {
 
             const productPopulated = await product
                 .populate('images')
+                .populate('mainImage')
                 .populate('variants')
                 .execPopulate();
 
