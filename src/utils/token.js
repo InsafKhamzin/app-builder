@@ -17,7 +17,6 @@ const decodeToken = (token) => {
         const payload = jwt.verify(token, config.get('jwtSecret'));
         return payload;
     } catch (error) {
-        console.log(error);
         return undefined;
     }
 }

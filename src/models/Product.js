@@ -7,6 +7,11 @@ const ProductSchema = new Schema({
         ref: 'app',
         required: true
     },
+    category: {
+        type: Schema.Types.ObjectId,
+        ref: 'category',
+        index: true
+    },
     name: {
         type: String,
         required: true
@@ -14,15 +19,15 @@ const ProductSchema = new Schema({
     description: {
         type: String
     },
-    totalQuantity:{
+    totalQuantity: {
         type: Number,
         default: 0
     },
-    totalOrders:{
+    totalOrders: {
         type: Number,
         default: 0
     },
-    totalReviews:{
+    totalReviews: {
         type: Number,
         default: 0
     },
@@ -30,22 +35,26 @@ const ProductSchema = new Schema({
         type: Number,
         default: 0.0
     },
-    price: {//DELETE
+    fullPrice: {
         type: Number,
         required: true
     },
-    currency: {//DELETE
+    purchasePrice: {
+        type: Number,
+        required: true
+    },
+    currency: {
         type: String,
         required: true
+    },
+    mainImage: {
+        type: Schema.Types.ObjectId,
+        ref: 'image'
     },
     images: [{
         type: Schema.Types.ObjectId,
         ref: 'image'
     }],
-    category: {
-        type: Schema.Types.ObjectId,
-        ref: 'category'
-    },
     attributes: [{
         type: String
     }],
@@ -63,12 +72,12 @@ const ProductSchema = new Schema({
         type: String
     }],
     characteristics: [{
-        title: {
+        name: {
             type: String,
             required: true
         },
-        values: [{
-            title: {
+        options: [{
+            name: {
                 type: String,
                 require: true,
             },
@@ -82,7 +91,10 @@ const ProductSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'product_variant'
     }]
-
-});
+},
+    {
+        timestamps: true
+    }
+);
 
 module.exports = Product = mongoose.model('product', ProductSchema);

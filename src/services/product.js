@@ -1,10 +1,12 @@
 const logger = require('../utils/logger');
 const Product = require('../models/Product');
+const ProductVariant = require('../models/ProductVariant');
 const Category = require('../models/Category');
 const ClientError = require('../common/clientError');
+const mongoose = require('mongoose');
 
 module.exports = class ProductService {
-    async addProduct({ appId, name, description, price, categoryId, images }) {
+    async addProduct({ appId, name, description, price, categoryId, mainImage, images, characteristics, variants }) {
         try {
             const category = await Category.findOne({ app: appId, _id: categoryId });
             if (!category) {
@@ -13,24 +15,52 @@ module.exports = class ProductService {
             if (category.children && category.children.length > 0) {
                 throw new ClientError('Category contains subcategories', 400);
             }
+            const newProductId = mongoose.Types.ObjectId();
+
+            const varintIds = []
+            const productVariants = variants.map(variant => {
+                const newVariantId = mongoose.Types.ObjectId();
+                varintIds.push(newVariantId);
+                return new ProductVariant({
+                    _id: newVariantId,
+                    productId: newProductId,
+                    quantity: variant.quantity,
+                    fullPrice: variant.price,
+                    purchasePrice: variant.price,
+                    characteristics: variant.characteristics
+                });
+            });
 
             const newProduct = new Product({
+                _id: newProductId,
                 app: appId,
                 name: name,
                 description: description,
-                price: price,
-                currency: 'RUB', //TODO
                 category: category._id,
-                images
+                mainImage,
+                images,
+                fullPrice: price,
+                purchasePrice: price,
+                currency: 'RUB',
+                characteristics: characteristics,
+                variants: varintIds
             });
-            const product = await newProduct.save();
-            const productWithImages = await product.populate('images').execPopulate();
 
+            //TODO make a transaction
+            //saving product
+            const product = await newProduct.save();
+            //saving product variants
+            await ProductVariant.insertMany(productVariants);
             //increment number of products in category
             category.productCount++;
             await category.save();
 
-            return productWithImages;
+            const productPopulated = await product
+                .populate('images')
+                .populate('variants')
+                .execPopulate();
+
+            return productPopulated;
         } catch (error) {
             logger.error(`ProductService addProduct ex: ${error.message}`);
             throw error;
@@ -66,7 +96,12 @@ module.exports = class ProductService {
 
     async getAll(appId) {
         try {
-            const products = Product.find({ app: appId });
+            const products = Product.find(
+                { app: appId },
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage')
+                .populate('mainImage', 'small')
+                .sort({updatedAt: 'desc'});
+
             return products;
         } catch (error) {
             logger.error(`ProductService getAll ex: ${error.message}`);
@@ -76,7 +111,11 @@ module.exports = class ProductService {
 
     async getByCategory(appId, categoryId) {
         try {
-            const products = Product.find({ app: appId, category: categoryId });
+            const products = Product.find({ app: appId, category: categoryId },
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage')
+                .populate('mainImage', 'small')
+                .sort({updatedAt: 'desc'});
+
             return products;
         } catch (error) {
             logger.error(`ProductService getByCategory ex: ${error.message}`);

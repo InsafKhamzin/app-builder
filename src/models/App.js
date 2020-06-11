@@ -15,6 +15,10 @@ const AppSchema = new Schema({
         ref: 'user',
         index: true
     }
-});
+},
+    {
+        timestamps: true
+    }
+);
 
 module.exports = App = mongoose.model('app', AppSchema);

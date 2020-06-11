@@ -23,7 +23,7 @@ const CustomerSchema = new Schema({
     date: {
         type: Date,
         default: Date.now
-    }, 
+    },
     app: {
         type: Schema.Types.ObjectId,
         ref: 'app'
@@ -44,6 +44,10 @@ const CustomerSchema = new Schema({
             }
         }
     ]
-});
+},
+    {
+        timestamps: true
+    }
+);
 
 module.exports = Customer = mongoose.model('customer', CustomerSchema);

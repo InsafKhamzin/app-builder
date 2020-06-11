@@ -16,14 +16,27 @@ const productService = new ProductService();
 // @param description
 // @param price
 // @param categoryId
+// @param characteristics
+// @param variants
 
 router.post('/', productAddValidation,
     async (req, res, next) => {
         try {
-            const { name, description, price, categoryId, images } = req.body;
+            const { name, description, price, categoryId, mainImage, images, characteristics, variants } = req.body;
             const appId = req.params.appId
 
-            const result = await productService.addProduct({ appId, name, description, price, categoryId, images });
+            const result = await productService.addProduct({
+                appId,
+                name,
+                description,
+                price,
+                categoryId,
+                mainImage,
+                images,
+                characteristics,
+                variants
+            });
+
             res.json(result);
         } catch (error) {
             next(error);

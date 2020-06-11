@@ -20,10 +20,6 @@ const UserSchema = new Schema({
     avatar: {
         type: String
     },
-    date: {
-        type: Date,
-        default: Date.now
-    },
     refreshTokens: [
         {
             refreshToken: {
@@ -41,6 +37,10 @@ const UserSchema = new Schema({
             _id: false
         }
     ]
-});
+},
+    {
+        timestamps: true
+    }
+);
 
 module.exports = User = mongoose.model('user', UserSchema);

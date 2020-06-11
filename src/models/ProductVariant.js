@@ -19,16 +19,12 @@ const ProductVariantSchema = new Schema({
         type: Number,
         required: true
     },
-    currency: {
-        type: String,
-        required: true
-    },
     characteristics: [{
-        type: {
+        characteristic: {
             type: String,
             required: true
         },
-        value: {
+        option: {
             type: String,
             required: true
         }

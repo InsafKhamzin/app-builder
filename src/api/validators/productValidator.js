@@ -34,7 +34,7 @@ module.exports.productAddValidation = [
         .exists(),
 
     //check if values provided in variants[] associated with info in characteristics
-    body('variants.*').custom((variant, {req}) =>{
+    body('variants.*.characteristics.*').custom((variant, {req}) =>{
         const associateCharIdx = req.body.characteristics.findIndex(x => x._id == variant.characteristic);
         if(associateCharIdx === -1){
             throw Error("No associate characteristic in characteristics[]");
