@@ -1,4 +1,5 @@
 const bcrypt = require('bcryptjs');
+const _object = require('lodash/object');
 
 const logger = require('../utils/logger');
 const User = require('../models/User');
@@ -8,7 +9,7 @@ const { createToken, createRefresh } = require('../utils/token');
 
 
 module.exports = class AuthService {
-    async registerUser({ email, password }) {
+    async registerUser({ email, password, firstName, lastName }) {
         try {
             let user = await User.findOne({ email });
             if (user) {
@@ -16,24 +17,29 @@ module.exports = class AuthService {
             }
             user = new User({
                 email,
-                password
+                password,
+                firstName,
+                lastName
             });
             const salt = await bcrypt.genSalt();
             user.password = await bcrypt.hash(password, salt);
 
             const tokenPayload = {
                 user: {
-                    id: user.id
+                    id: user._id
                 },
                 apps: []
             };
             const token = createToken(tokenPayload);
             const { refreshToken, createdAt, expiresAt } = createRefresh();
-            user.refreshTokens.unshift({ refreshToken, createdAt, expiresAt });
+            user.refreshTokens.push({ refreshToken, createdAt, expiresAt });
 
-            await user.save();
-
-            return { token, refreshToken }
+            const newUser = await user.save();
+            return {
+                token,
+                refreshToken,
+                user: _object.pick(newUser, ['_id', 'email', 'firstName', 'lastName']),
+            }
         } catch (error) {
             logger.error(`AuthService registerUser ex: ${error.message}`);
             throw error;
@@ -56,18 +62,21 @@ module.exports = class AuthService {
 
             const tokenPayload = {
                 user: {
-                    id: user.id
+                    id: user._id
                 },
                 apps: [...apps]
             };
             const token = createToken(tokenPayload);
             const { refreshToken, createdAt, expiresAt } = createRefresh();
 
-            user.refreshTokens.unshift({ refreshToken, createdAt, expiresAt });
+            user.refreshTokens.push({ refreshToken, createdAt, expiresAt });
             await user.save();
-
-
-            return { token, refreshToken, apps };
+            return {
+                token,
+                refreshToken,
+                user: _object.pick(user, ['_id', 'email', 'firstName', 'lastName']),
+                apps
+            };
         } catch (error) {
             logger.error(`AuthService loginUser ex: ${error.message}`);
             throw error;
@@ -95,12 +104,12 @@ module.exports = class AuthService {
 
             const tokenPayload = {
                 user: {
-                    id: user.id
+                    id: user._id
                 },
                 apps: [...apps]
             };
             const token = createToken(tokenPayload);
-            return ({ token });
+            return { token };
         } catch (error) {
             logger.error(`AuthService refresh ex: ${error.message}`);
             throw error;
@@ -126,5 +135,16 @@ module.exports = class AuthService {
             throw error;
         }
     }
+
+    async getUser(userId) {
+        try {
+            const user = await User.findById(userId, '_id email firstName lastName');
+            return user;
+        } catch (error) {
+            logger.error(`AuthService getUser ex: ${error.message}`);
+            throw error;
+        }
+    }
+
 }
 

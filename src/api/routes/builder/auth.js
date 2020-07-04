@@ -79,5 +79,18 @@ router.delete('/revoke',
         }
     });
 
+router.get('/get',
+    [
+        auth
+    ],
+    async (req, res, next) => {
+        try {
+            const result = await authService.getUser(req.user.id);
+            res.json(result);
+        } catch (error) {
+            next(error);
+        }
+    })
+
 
 module.exports = router;
