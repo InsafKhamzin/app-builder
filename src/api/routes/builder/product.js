@@ -43,6 +43,31 @@ router.post('/', productAddValidation,
         }
     });
 
+router.put('/:productId', productAddValidation,
+    async (req, res, next) => {
+        try {
+            const { name, description, price, categoryId, mainImage, images, characteristics, variants } = req.body;
+            const { appId, productId } = req.params;
+
+            const result = await productService.updateProduct({
+                appId,
+                productId,
+                name,
+                description,
+                price,
+                categoryId,
+                mainImage,
+                images,
+                characteristics,
+                variants
+            });
+
+            res.json(result);
+        } catch (error) {
+            next(error);
+        }
+    });
+
 // @route DELETE product/:productId
 // @desc delete product
 

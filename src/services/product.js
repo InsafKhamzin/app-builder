@@ -17,10 +17,10 @@ module.exports = class ProductService {
             }
             const newProductId = mongoose.Types.ObjectId();
 
-            const varintIds = []
+            const variantIds = []
             const productVariants = variants.map(variant => {
                 const newVariantId = mongoose.Types.ObjectId();
-                varintIds.push(newVariantId);
+                variantIds.push(newVariantId);
                 return new ProductVariant({
                     _id: newVariantId,
                     productId: newProductId,
@@ -43,7 +43,7 @@ module.exports = class ProductService {
                 purchasePrice: price,
                 currency: 'RUB',
                 characteristics: characteristics,
-                variants: varintIds
+                variants: variantIds
             });
 
             //TODO make a transaction
@@ -64,6 +64,61 @@ module.exports = class ProductService {
             return productPopulated;
         } catch (error) {
             logger.error(`ProductService addProduct ex: ${error.message}`);
+            throw error;
+        }
+    }
+
+    async updateProduct({ appId, productId, name, description, price, categoryId, mainImage, images, characteristics, variants }) {
+        try {
+            const product = await Product.findById(productId);
+            if (!product) {
+                throw new ClientError('Product not found', 404)
+            }
+            const category = await Category.findOne({ app: appId, _id: categoryId });
+            if (!category) {
+                throw new ClientError('Category not found', 404);
+            }
+            if (category.children && category.children.length > 0) {
+                throw new ClientError('Category contains subcategories', 400);
+            }
+
+            const variantIds = []
+            const productVariants = variants.map(variant => {
+                const newVariantId = mongoose.Types.ObjectId();
+                variantIds.push(newVariantId);
+                return new ProductVariant({
+                    _id: newVariantId,
+                    productId: product._id,
+                    quantity: variant.quantity,
+                    fullPrice: variant.price,
+                    purchasePrice: variant.price,
+                    characteristics: variant.characteristics
+                });
+            });
+
+            product.name = name;
+            product.description = description;
+            product.fullPrice = price;
+            product.purchasePrice = price;
+            product.mainImage = mainImage;
+            product.images = images;
+            product.characteristics = characteristics;
+            product.variants = variantIds;
+
+            const productUpdated = await product.save();
+            await ProductVariant.deleteMany({ productId: product._id });
+            await ProductVariant.insertMany(productVariants);
+            await category.save();
+
+            const productPopulated = await productUpdated
+                .populate('images')
+                .populate('mainImage')
+                .populate('variants')
+                .execPopulate();
+
+            return productPopulated;
+        } catch (error) {
+            logger.error(`ProductService updateProduct ex: ${error.message}`);
             throw error;
         }
     }
@@ -101,7 +156,7 @@ module.exports = class ProductService {
                 { app: appId },
                 '_id name totalQuantity totalOrders totalReviews rating category mainImage')
                 .populate('mainImage', 'small')
-                .sort({updatedAt: 'desc'});
+                .sort({ updatedAt: 'desc' });
 
             return products;
         } catch (error) {
@@ -115,7 +170,7 @@ module.exports = class ProductService {
             const products = Product.find({ app: appId, category: categoryId },
                 '_id name totalQuantity totalOrders totalReviews rating category mainImage')
                 .populate('mainImage', 'small')
-                .sort({updatedAt: 'desc'});
+                .sort({ updatedAt: 'desc' });
 
             return products;
         } catch (error) {
