@@ -4,7 +4,6 @@ const { validate } = require('./validate');
 module.exports.productAddValidation = [
     body('categoryId', 'Invalid category id').isMongoId(),
     body('name', 'Name is required').notEmpty(),
-    body('price', 'Invalid price').isNumeric(),
 
     //if images field exist then it must be an array with mongoDb ids.
     body('images')
