@@ -159,7 +159,7 @@ module.exports = class ProductService {
         try {
             const products = Product.find(
                 { app: appId },
-                '_id name totalQuantity totalOrders totalReviews rating category mainImage')
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage price')
                 .populate('mainImage', 'small')
                 .sort({ updatedAt: 'desc' });
 
@@ -173,7 +173,7 @@ module.exports = class ProductService {
     async getByCategory(appId, categoryId) {
         try {
             const products = Product.find({ app: appId, category: categoryId },
-                '_id name totalQuantity totalOrders totalReviews rating category mainImage')
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage price')
                 .populate('mainImage', 'small')
                 .sort({ updatedAt: 'desc' });
 
