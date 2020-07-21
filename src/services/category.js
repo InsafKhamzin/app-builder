@@ -3,6 +3,7 @@ const Category = require('../models/Category');
 const Product = require('../models/Product');
 const ClientError = require('../common/clientError');
 const mongoose = require('mongoose');
+const {getCache, putCache} = require('../utils/cacheUtil');
 
 module.exports = class CategoryService {
 
@@ -34,7 +35,10 @@ module.exports = class CategoryService {
             }
             await newCategory.save();
 
-            return await Category.find({ app: appId, parent: null });
+            const categoryTree = await Category.find({ app: appId, parent: null });
+            putCache('categoryTree' + appId, categoryTree);
+
+            return categoryTree;
         } catch (error) {
             logger.error(`CategoryService addCategory ex: ${error.message}`);
             throw error;
@@ -50,7 +54,10 @@ module.exports = class CategoryService {
             category.name = name;
             await category.save();
 
-            return await Category.find({ app: appId, parent: null });
+            const categoryTree = await Category.find({ app: appId, parent: null });
+            putCache('categoryTree' + appId, categoryTree);
+
+            return categoryTree
         } catch (error) {
             logger.error(`CategoryService updateCategory ex: ${error.message}`);
             throw error;
@@ -65,7 +72,10 @@ module.exports = class CategoryService {
             }
 
             await Category.findOneAndDelete({ app: appId, _id: categoryId });
-            return await Category.find({ app: appId, parent: null });
+            const categoryTree = await Category.find({ app: appId, parent: null });
+            putCache('categoryTree' + appId, categoryTree);
+
+            return categoryTree;
         } catch (error) {
             logger.error(`CategoryService deleteCategory ex: ${error.message}`);
             throw error;
@@ -74,7 +84,12 @@ module.exports = class CategoryService {
 
     async getAll({ appId }) {
         try {
-            return await Category.find({ app: appId, parent: null });
+            let categoryTree = getCache('categoryTree' + appId);
+            if(!categoryTree){
+                categoryTree = await Category.find({ app: appId, parent: null });
+                putCache('categoryTree' + appId, categoryTree);
+            }
+            return categoryTree;
         } catch (error) {
             logger.error(`CategoryService getAll ex: ${error.message}`);
             throw error;
