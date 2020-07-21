@@ -35,11 +35,7 @@ const ProductSchema = new Schema({
         type: Number,
         default: 0.0
     },
-    fullPrice: {
-        type: Number,
-        required: true
-    },
-    purchasePrice: {
+    price: {
         type: Number,
         required: true
     },

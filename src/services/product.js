@@ -31,6 +31,12 @@ module.exports = class ProductService {
                 });
             });
 
+            //min amount
+            const minAmount = variants.reduce(
+                (max, variant) => (parseInt(variant.price) > max ? parseInt(variant.price) : max),
+                parseInt(variants[0].price)
+              );
+
             const newProduct = new Product({
                 _id: newProductId,
                 app: appId,
@@ -39,8 +45,7 @@ module.exports = class ProductService {
                 category: category._id,
                 mainImage,
                 images,
-                fullPrice: price,
-                purchasePrice: price,
+                price: minAmount,
                 currency: 'RUB',
                 characteristics: characteristics,
                 variants: variantIds

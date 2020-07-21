@@ -24,14 +24,15 @@ module.exports.productAddValidation = [
     body('characteristics.*.options.*.value', 'Characteristic option value is required').notEmpty(),
 
     //variants validation
-    body('variants')
-        .if(body('variants').exists())
-        .isArray({ min: 1 }).withMessage('Must be a non-empty array'),
-
-    //if variants are being added then characteristics[] must exist
-    body('characteristics', 'characteristics[] must be provided')
-        .if(body('variants').exists())
-        .exists(),
+    body('variants', 'Variants must exist')
+    .exists()
+    .bail()
+    .custom((variants, {req}) =>{
+        if(!req.body.characteristics && variants.length > 1){
+            throw Error("Can't be more than one variants[] if no characteristics[]");
+        }
+        return true;
+    }),
 
     //check if values provided in variants[] associated with info in characteristics
     body('variants.*.characteristics.*').custom((variant, {req}) =>{
