@@ -1,0 +1,7134 @@
+{
+  "payload": [
+    {
+      "id": 1559,
+      "title": "Одежда и Аксессуары",
+      "icon": "t-shirt",
+      "children": [
+        {
+          "id": 3,
+          "productAmount": 1775,
+          "adult": false,
+          "eco": false,
+          "title": "Мужская одежда",
+          "path": null,
+          "children": [
+            {
+              "id": 20,
+              "productAmount": 720,
+              "adult": false,
+              "eco": false,
+              "title": "Носки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 8,
+              "productAmount": 417,
+              "adult": false,
+              "eco": false,
+              "title": "Футболки и Поло",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 13,
+              "productAmount": 120,
+              "adult": false,
+              "eco": false,
+              "title": "Нижнее белье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 9,
+              "productAmount": 112,
+              "adult": false,
+              "eco": false,
+              "title": "Джемперы, Свитеры и Кардиганы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 14,
+              "productAmount": 86,
+              "adult": false,
+              "eco": false,
+              "title": "Рубашки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 11,
+              "productAmount": 77,
+              "adult": false,
+              "eco": false,
+              "title": "Джинсы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 15,
+              "productAmount": 70,
+              "adult": false,
+              "eco": false,
+              "title": "Толстовки и Худи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 10,
+              "productAmount": 41,
+              "adult": false,
+              "eco": false,
+              "title": "Верхняя одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 12,
+              "productAmount": 30,
+              "adult": false,
+              "eco": false,
+              "title": "Брюки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1934,
+              "productAmount": 28,
+              "adult": false,
+              "eco": false,
+              "title": "Другое",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 18,
+              "productAmount": 26,
+              "adult": false,
+              "eco": false,
+              "title": "Домашняя одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 19,
+              "productAmount": 18,
+              "adult": false,
+              "eco": false,
+              "title": "Шорты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1878,
+              "productAmount": 13,
+              "adult": false,
+              "eco": false,
+              "title": "Мусульманская одежда и атрибутика\n",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 21,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Термобелье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 16,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Костюмы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 164,
+          "productAmount": 5869,
+          "adult": false,
+          "eco": false,
+          "title": "Женская одежда",
+          "path": null,
+          "children": [
+            {
+              "id": 188,
+              "productAmount": 1699,
+              "adult": false,
+              "eco": false,
+              "title": "Носки, Чулки и Колготки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 174,
+              "productAmount": 896,
+              "adult": false,
+              "eco": false,
+              "title": "Нижнее белье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 169,
+              "productAmount": 655,
+              "adult": false,
+              "eco": false,
+              "title": "Платья",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 178,
+              "productAmount": 548,
+              "adult": false,
+              "eco": false,
+              "title": "Домашняя одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 171,
+              "productAmount": 519,
+              "adult": false,
+              "eco": false,
+              "title": "Футболки и Поло",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 175,
+              "productAmount": 288,
+              "adult": false,
+              "eco": false,
+              "title": "Джемперы, Свитеры и Кардиганы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 172,
+              "productAmount": 186,
+              "adult": false,
+              "eco": false,
+              "title": "Верхняя одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 170,
+              "productAmount": 143,
+              "adult": false,
+              "eco": false,
+              "title": "Блузы и Рубашки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 185,
+              "productAmount": 141,
+              "adult": false,
+              "eco": false,
+              "title": "Юбки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 180,
+              "productAmount": 88,
+              "adult": false,
+              "eco": false,
+              "title": "Пляжная одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 177,
+              "productAmount": 87,
+              "adult": false,
+              "eco": false,
+              "title": "Костюмы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 382,
+              "productAmount": 83,
+              "adult": false,
+              "eco": false,
+              "title": "Для беременных",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 184,
+              "productAmount": 77,
+              "adult": false,
+              "eco": false,
+              "title": "Брюки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 176,
+              "productAmount": 75,
+              "adult": false,
+              "eco": false,
+              "title": "Толстовки и Худи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 181,
+              "productAmount": 63,
+              "adult": false,
+              "eco": false,
+              "title": "Топы и Майки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 173,
+              "productAmount": 54,
+              "adult": false,
+              "eco": false,
+              "title": "Джинсы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1879,
+              "productAmount": 48,
+              "adult": false,
+              "eco": false,
+              "title": "Мусульманская одежда и атрибутика\n",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1775,
+              "productAmount": 44,
+              "adult": false,
+              "eco": false,
+              "title": "Леггинсы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 183,
+              "productAmount": 41,
+              "adult": false,
+              "eco": false,
+              "title": "Туники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 187,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Шорты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 182,
+              "productAmount": 31,
+              "adult": false,
+              "eco": false,
+              "title": "Боди",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 179,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Комбинезоны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1935,
+              "productAmount": 23,
+              "adult": false,
+              "eco": false,
+              "title": "Другое",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 186,
+              "productAmount": 15,
+              "adult": false,
+              "eco": false,
+              "title": "Термобелье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1946,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Школьная форма",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 443,
+          "productAmount": 3403,
+          "adult": false,
+          "eco": false,
+          "title": "Детская одежда",
+          "path": null,
+          "children": [
+            {
+              "id": 466,
+              "productAmount": 392,
+              "adult": false,
+              "eco": false,
+              "title": "Носки и Гетры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 606,
+              "productAmount": 355,
+              "adult": false,
+              "eco": false,
+              "title": "Одежда для новорожденных",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 448,
+              "productAmount": 350,
+              "adult": false,
+              "eco": false,
+              "title": "Футболки и Поло",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 451,
+              "productAmount": 320,
+              "adult": false,
+              "eco": false,
+              "title": "Платья",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 458,
+              "productAmount": 265,
+              "adult": false,
+              "eco": false,
+              "title": "Домашняя одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 457,
+              "productAmount": 253,
+              "adult": false,
+              "eco": false,
+              "title": "Костюмы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 449,
+              "productAmount": 211,
+              "adult": false,
+              "eco": false,
+              "title": "Джемперы, Свитеры и Кардиганы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 467,
+              "productAmount": 188,
+              "adult": false,
+              "eco": false,
+              "title": "Колготки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 459,
+              "productAmount": 150,
+              "adult": false,
+              "eco": false,
+              "title": "Брюки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 453,
+              "productAmount": 139,
+              "adult": false,
+              "eco": false,
+              "title": "Нижнее белье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 450,
+              "productAmount": 117,
+              "adult": false,
+              "eco": false,
+              "title": "Верхняя одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 463,
+              "productAmount": 83,
+              "adult": false,
+              "eco": false,
+              "title": "Пляжная одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 456,
+              "productAmount": 76,
+              "adult": false,
+              "eco": false,
+              "title": "Толстовки и Худи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 460,
+              "productAmount": 74,
+              "adult": false,
+              "eco": false,
+              "title": "Шорты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 464,
+              "productAmount": 72,
+              "adult": false,
+              "eco": false,
+              "title": "Топы и Майки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 462,
+              "productAmount": 60,
+              "adult": false,
+              "eco": false,
+              "title": "Комбинезоны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1812,
+              "productAmount": 53,
+              "adult": false,
+              "eco": false,
+              "title": "Леггинсы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 452,
+              "productAmount": 45,
+              "adult": false,
+              "eco": false,
+              "title": "Джинсы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 465,
+              "productAmount": 45,
+              "adult": false,
+              "eco": false,
+              "title": "Боди",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1781,
+              "productAmount": 40,
+              "adult": false,
+              "eco": false,
+              "title": "Карнавальные костюмы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 454,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Рубашки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 455,
+              "productAmount": 33,
+              "adult": false,
+              "eco": false,
+              "title": "Блузы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 461,
+              "productAmount": 31,
+              "adult": false,
+              "eco": false,
+              "title": "Юбки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 468,
+              "productAmount": 15,
+              "adult": false,
+              "eco": false,
+              "title": "Термобелье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2506,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Школьная форма",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1560,
+          "productAmount": 299,
+          "adult": false,
+          "eco": false,
+          "title": "Спортивная одежда",
+          "path": null,
+          "children": [
+            {
+              "id": 166,
+              "productAmount": 147,
+              "adult": false,
+              "eco": false,
+              "title": "Женская",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 6,
+              "productAmount": 115,
+              "adult": false,
+              "eco": false,
+              "title": "Мужская",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 445,
+              "productAmount": 37,
+              "adult": false,
+              "eco": false,
+              "title": "Детская",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1562,
+          "productAmount": 11944,
+          "adult": false,
+          "eco": false,
+          "title": "Аксессуары и Украшения",
+          "path": null,
+          "children": [
+            {
+              "id": 1566,
+              "productAmount": 3629,
+              "adult": false,
+              "eco": false,
+              "title": "Украшения",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1572,
+              "productAmount": 1570,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для волос",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1862,
+              "productAmount": 1438,
+              "adult": false,
+              "eco": false,
+              "title": "Значки, Брелки, Нашивки и Наклейки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1563,
+              "productAmount": 1005,
+              "adult": false,
+              "eco": false,
+              "title": "Сумки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1565,
+              "productAmount": 773,
+              "adult": false,
+              "eco": false,
+              "title": "Головные уборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1564,
+              "productAmount": 771,
+              "adult": false,
+              "eco": false,
+              "title": "Рюкзаки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1575,
+              "productAmount": 570,
+              "adult": false,
+              "eco": false,
+              "title": "Бизнес-аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1568,
+              "productAmount": 501,
+              "adult": false,
+              "eco": false,
+              "title": "Кошельки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1570,
+              "productAmount": 329,
+              "adult": false,
+              "eco": false,
+              "title": "Часы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1573,
+              "productAmount": 249,
+              "adult": false,
+              "eco": false,
+              "title": "Ремни, Пояса и Подтяжки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1567,
+              "productAmount": 246,
+              "adult": false,
+              "eco": false,
+              "title": "Платки и Шарфы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1576,
+              "productAmount": 244,
+              "adult": false,
+              "eco": false,
+              "title": "Очки и Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1569,
+              "productAmount": 174,
+              "adult": false,
+              "eco": false,
+              "title": "Косметички",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1577,
+              "productAmount": 123,
+              "adult": false,
+              "eco": false,
+              "title": "Галстуки и Запонки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1574,
+              "productAmount": 92,
+              "adult": false,
+              "eco": false,
+              "title": "Перчатки и Варежки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1571,
+              "productAmount": 60,
+              "adult": false,
+              "eco": false,
+              "title": "Зонты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1782,
+              "productAmount": 58,
+              "adult": false,
+              "eco": false,
+              "title": "Карнавальные украшения и аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1578,
+              "productAmount": 44,
+              "adult": false,
+              "eco": false,
+              "title": "Ювелирные изделия",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1786,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Чемоданы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2452,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Свадебные аксессуары",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1947,
+          "productAmount": 36,
+          "adult": false,
+          "eco": false,
+          "title": "Униформы",
+          "path": null,
+          "children": [
+            {
+              "id": 1949,
+              "productAmount": 25,
+              "adult": false,
+              "eco": false,
+              "title": "Для сферы услуг",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1948,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Для медицины",
+              "path": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1722,
+      "title": "Обувь",
+      "icon": "footwear",
+      "children": [
+        {
+          "id": 4,
+          "productAmount": 208,
+          "adult": false,
+          "eco": false,
+          "title": "Мужская обувь",
+          "path": null,
+          "children": [
+            {
+              "id": 91,
+              "productAmount": 54,
+              "adult": false,
+              "eco": false,
+              "title": "Кроссовки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 94,
+              "productAmount": 43,
+              "adult": false,
+              "eco": false,
+              "title": "Туфли",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 100,
+              "productAmount": 35,
+              "adult": false,
+              "eco": false,
+              "title": "Домашняя обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 95,
+              "productAmount": 22,
+              "adult": false,
+              "eco": false,
+              "title": "Шлепанцы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 92,
+              "productAmount": 19,
+              "adult": false,
+              "eco": false,
+              "title": "Кеды",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 93,
+              "productAmount": 18,
+              "adult": false,
+              "eco": false,
+              "title": "Ботинки и Сапоги",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 96,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Резиновая обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 97,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Сандалии",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1735,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Зимняя обувь",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 165,
+          "productAmount": 452,
+          "adult": false,
+          "eco": false,
+          "title": "Женская обувь",
+          "path": null,
+          "children": [
+            {
+              "id": 325,
+              "productAmount": 171,
+              "adult": false,
+              "eco": false,
+              "title": "Домашняя обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 314,
+              "productAmount": 89,
+              "adult": false,
+              "eco": false,
+              "title": "Кроссовки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 323,
+              "productAmount": 51,
+              "adult": false,
+              "eco": false,
+              "title": "Шлепанцы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 313,
+              "productAmount": 25,
+              "adult": false,
+              "eco": false,
+              "title": "Кеды",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 311,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Ботинки и Сапоги",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1736,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Зимняя обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 317,
+              "productAmount": 15,
+              "adult": false,
+              "eco": false,
+              "title": "Босоножки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 312,
+              "productAmount": 14,
+              "adult": false,
+              "eco": false,
+              "title": "Туфли",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 315,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Слипоны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 318,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Резиновая обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 320,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Сандалии",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 316,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Балетки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 319,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Мокасины",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 444,
+          "productAmount": 306,
+          "adult": false,
+          "eco": false,
+          "title": "Детская обувь",
+          "path": null,
+          "children": [
+            {
+              "id": 549,
+              "productAmount": 70,
+              "adult": false,
+              "eco": false,
+              "title": "Сандалии",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 543,
+              "productAmount": 53,
+              "adult": false,
+              "eco": false,
+              "title": "Ботинки и Сапоги",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 541,
+              "productAmount": 41,
+              "adult": false,
+              "eco": false,
+              "title": "Кроссовки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1738,
+              "productAmount": 39,
+              "adult": false,
+              "eco": false,
+              "title": "Зимняя обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 544,
+              "productAmount": 27,
+              "adult": false,
+              "eco": false,
+              "title": "Туфли",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 545,
+              "productAmount": 17,
+              "adult": false,
+              "eco": false,
+              "title": "Балетки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 547,
+              "productAmount": 17,
+              "adult": false,
+              "eco": false,
+              "title": "Шлепанцы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 542,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Кеды",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 552,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Домашняя обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 548,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Резиновая обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 546,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Босоножки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1884,
+          "productAmount": 108,
+          "adult": false,
+          "eco": false,
+          "title": "Аксессуары",
+          "path": null,
+          "children": [
+            {
+              "id": 1885,
+              "productAmount": 64,
+              "adult": false,
+              "eco": false,
+              "title": "Стельки и вкладыши",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2473,
+              "productAmount": 39,
+              "adult": false,
+              "eco": false,
+              "title": "Средства по уходу",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1932,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Гимнастическая обувь",
+              "path": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 797,
+      "title": "Электроника",
+      "icon": "tv",
+      "children": [
+        {
+          "id": 798,
+          "productAmount": 414,
+          "adult": false,
+          "eco": false,
+          "title": "Телефоны",
+          "path": null,
+          "children": [
+            {
+              "id": 804,
+              "productAmount": 168,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 805,
+              "productAmount": 156,
+              "adult": false,
+              "eco": false,
+              "title": "Запчасти",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 803,
+              "productAmount": 86,
+              "adult": false,
+              "eco": false,
+              "title": "Смартфоны",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 799,
+          "productAmount": 33,
+          "adult": false,
+          "eco": false,
+          "title": "Компьютеры",
+          "path": null,
+          "children": [
+            {
+              "id": 827,
+              "productAmount": 23,
+              "adult": false,
+              "eco": false,
+              "title": "Сеть",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 823,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Ноутбуки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 829,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Системные блоки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 826,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Устройства хранения",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 800,
+          "productAmount": 1043,
+          "adult": false,
+          "eco": false,
+          "title": "Аудиотехника",
+          "path": null,
+          "children": [
+            {
+              "id": 863,
+              "productAmount": 751,
+              "adult": false,
+              "eco": false,
+              "title": "Наушники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 868,
+              "productAmount": 194,
+              "adult": false,
+              "eco": false,
+              "title": "Портативные акустические системы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2025,
+              "productAmount": 44,
+              "adult": false,
+              "eco": false,
+              "title": "Микрофоны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 869,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Hi-Fi техника и Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1785,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Активные акустические системы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 866,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Магнитолы, Радиоприемники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1912,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Звуковые карты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 864,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "MP3 плееры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 867,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Музыкальные центры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 865,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Диктофоны",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 801,
+          "productAmount": 324,
+          "adult": false,
+          "eco": false,
+          "title": "Фото и Видео",
+          "path": null,
+          "children": [
+            {
+              "id": 875,
+              "productAmount": 155,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 874,
+              "productAmount": 139,
+              "adult": false,
+              "eco": false,
+              "title": "Экшн-камеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 873,
+              "productAmount": 30,
+              "adult": false,
+              "eco": false,
+              "title": "Видеокамеры",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 825,
+          "productAmount": 180,
+          "adult": false,
+          "eco": false,
+          "title": "Периферийные устройства",
+          "path": null,
+          "children": [
+            {
+              "id": 846,
+              "productAmount": 93,
+              "adult": false,
+              "eco": false,
+              "title": "Мыши",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 847,
+              "productAmount": 51,
+              "adult": false,
+              "eco": false,
+              "title": "Джойстики, Рули и Геймпады",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 845,
+              "productAmount": 27,
+              "adult": false,
+              "eco": false,
+              "title": "Клавиатура",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 848,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Принтеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2545,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Шредеры",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1904,
+          "productAmount": 10,
+          "adult": false,
+          "eco": false,
+          "title": "Оптические приборы",
+          "path": null,
+          "children": [
+            {
+              "id": 1905,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Телескопы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1906,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Микроскопы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1675,
+          "productAmount": 9730,
+          "adult": false,
+          "eco": false,
+          "title": "Аксессуары",
+          "path": null,
+          "children": [
+            {
+              "id": 1724,
+              "productAmount": 4114,
+              "adult": false,
+              "eco": false,
+              "title": "Сумки, Рюкзаки и Чехлы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1728,
+              "productAmount": 2033,
+              "adult": false,
+              "eco": false,
+              "title": "Защитные стекла и Пленки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1676,
+              "productAmount": 1297,
+              "adult": false,
+              "eco": false,
+              "title": "Кабели и Переходники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1727,
+              "productAmount": 584,
+              "adult": false,
+              "eco": false,
+              "title": "Зарядные устройства, Адаптеры и док-станции",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1725,
+              "productAmount": 408,
+              "adult": false,
+              "eco": false,
+              "title": "Батареи и Аккумуляторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1733,
+              "productAmount": 298,
+              "adult": false,
+              "eco": false,
+              "title": "Держатели и Подставки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1790,
+              "productAmount": 273,
+              "adult": false,
+              "eco": false,
+              "title": "Батарейки и Аккумуляторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1776,
+              "productAmount": 235,
+              "adult": false,
+              "eco": false,
+              "title": "Ремешки для фитнес-браслета",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 850,
+              "productAmount": 90,
+              "adult": false,
+              "eco": false,
+              "title": "USB Flash-накопители",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1832,
+              "productAmount": 83,
+              "adult": false,
+              "eco": false,
+              "title": "Электронные сигареты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1741,
+              "productAmount": 78,
+              "adult": false,
+              "eco": false,
+              "title": "USB-гаджеты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1743,
+              "productAmount": 68,
+              "adult": false,
+              "eco": false,
+              "title": "Коврики для мыши",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 851,
+              "productAmount": 60,
+              "adult": false,
+              "eco": false,
+              "title": "Карты памяти",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 812,
+              "productAmount": 36,
+              "adult": false,
+              "eco": false,
+              "title": "Bluetooth-гарнитура",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 816,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Брелоки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1830,
+              "productAmount": 20,
+              "adult": false,
+              "eco": false,
+              "title": "Чистящие средства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1732,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Наклейки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 821,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "VR очки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 813,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Объективы для телефонов",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1723,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "GPS-трекеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 822,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Перчатки для сенсорных экранов",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1734,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Стилусы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1682,
+          "productAmount": 690,
+          "adult": false,
+          "eco": false,
+          "title": "ТВ и видеотехника",
+          "path": null,
+          "children": [
+            {
+              "id": 1746,
+              "productAmount": 586,
+              "adult": false,
+              "eco": false,
+              "title": "Пульты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2465,
+              "productAmount": 48,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1683,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "ТВ-приставки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1926,
+              "productAmount": 18,
+              "adult": false,
+              "eco": false,
+              "title": "Проекторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2540,
+              "productAmount": 17,
+              "adult": false,
+              "eco": false,
+              "title": "Телевизоры",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1689,
+          "productAmount": 199,
+          "adult": false,
+          "eco": false,
+          "title": "Компоненты и Комплектующие",
+          "path": null,
+          "children": [
+            {
+              "id": 1690,
+              "productAmount": 89,
+              "adult": false,
+              "eco": false,
+              "title": "Активные компоненты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1847,
+              "productAmount": 57,
+              "adult": false,
+              "eco": false,
+              "title": "Соединители и Клеммы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2008,
+              "productAmount": 23,
+              "adult": false,
+              "eco": false,
+              "title": "Системы охлаждения компьютера",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1691,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Пассивные компоненты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2462,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Контроллеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2013,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Кнопки и переключатели",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1858,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Программаторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2002,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Материнские платы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2003,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Оперативная память",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2519,
+          "productAmount": 18,
+          "adult": false,
+          "eco": false,
+          "title": "Игровые приставки",
+          "path": null,
+          "children": [
+            {
+              "id": 2523,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Ретро-приставки (SEGA, Dendy, Hamy)",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2520,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "PlayStation",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2525,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для игровых приставок",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2521,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Xbox",
+              "path": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1141,
+      "title": "Дом и Ремонт",
+      "icon": "house",
+      "children": [
+        {
+          "id": 1924,
+          "productAmount": 54,
+          "adult": false,
+          "eco": false,
+          "title": "Спецодежда",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 1142,
+          "productAmount": 3762,
+          "adult": false,
+          "eco": false,
+          "title": "Кухня",
+          "path": null,
+          "children": [
+            {
+              "id": 1151,
+              "productAmount": 1410,
+              "adult": false,
+              "eco": false,
+              "title": "Кухонные принадлежности",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1150,
+              "productAmount": 1303,
+              "adult": false,
+              "eco": false,
+              "title": "Посуда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1153,
+              "productAmount": 343,
+              "adult": false,
+              "eco": false,
+              "title": "Хранение продуктов",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1154,
+              "productAmount": 230,
+              "adult": false,
+              "eco": false,
+              "title": "Организация пространства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1155,
+              "productAmount": 167,
+              "adult": false,
+              "eco": false,
+              "title": "Столовый текстиль",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1152,
+              "productAmount": 152,
+              "adult": false,
+              "eco": false,
+              "title": "Столовые приборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1156,
+              "productAmount": 150,
+              "adult": false,
+              "eco": false,
+              "title": "Фильтры для воды",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1945,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Чехлы для стульев",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1143,
+          "productAmount": 2408,
+          "adult": false,
+          "eco": false,
+          "title": "Хозяйственные товары",
+          "path": null,
+          "children": [
+            {
+              "id": 1806,
+              "productAmount": 775,
+              "adult": false,
+              "eco": false,
+              "title": "Бытовая химия",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1234,
+              "productAmount": 586,
+              "adult": false,
+              "eco": false,
+              "title": "Товары для хранения",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1235,
+              "productAmount": 399,
+              "adult": false,
+              "eco": false,
+              "title": "Инвентарь для уборки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1233,
+              "productAmount": 224,
+              "adult": false,
+              "eco": false,
+              "title": "Ванная и Туалет",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2017,
+              "productAmount": 157,
+              "adult": false,
+              "eco": false,
+              "title": "Средства защиты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1236,
+              "productAmount": 86,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за одеждой и обувью",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1952,
+              "productAmount": 66,
+              "adult": false,
+              "eco": false,
+              "title": "Зажигалки и аксессуары для курения",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1237,
+              "productAmount": 60,
+              "adult": false,
+              "eco": false,
+              "title": "Туалетная бумага и Салфетки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1239,
+              "productAmount": 37,
+              "adult": false,
+              "eco": false,
+              "title": "Хозяйственные сумки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1238,
+              "productAmount": 17,
+              "adult": false,
+              "eco": false,
+              "title": "Сушилки для белья",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1144,
+          "productAmount": 3428,
+          "adult": false,
+          "eco": false,
+          "title": "Интерьер",
+          "path": null,
+          "children": [
+            {
+              "id": 1261,
+              "productAmount": 673,
+              "adult": false,
+              "eco": false,
+              "title": "Сувениры и Подарки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1260,
+              "productAmount": 621,
+              "adult": false,
+              "eco": false,
+              "title": "Домашний текстиль",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1889,
+              "productAmount": 468,
+              "adult": false,
+              "eco": false,
+              "title": "Элементы интерьера",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1765,
+              "productAmount": 383,
+              "adult": false,
+              "eco": false,
+              "title": "Освещение",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1266,
+              "productAmount": 214,
+              "adult": false,
+              "eco": false,
+              "title": "Свечи и Ароматерапия",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1810,
+              "productAmount": 188,
+              "adult": false,
+              "eco": false,
+              "title": "Искусственные цветы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1263,
+              "productAmount": 185,
+              "adult": false,
+              "eco": false,
+              "title": "Ванная и Туалет",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1742,
+              "productAmount": 147,
+              "adult": false,
+              "eco": false,
+              "title": "Наклейки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1264,
+              "productAmount": 109,
+              "adult": false,
+              "eco": false,
+              "title": "Картины",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1262,
+              "productAmount": 92,
+              "adult": false,
+              "eco": false,
+              "title": "Часы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1944,
+              "productAmount": 74,
+              "adult": false,
+              "eco": false,
+              "title": "Шторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1269,
+              "productAmount": 64,
+              "adult": false,
+              "eco": false,
+              "title": "Вазы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1265,
+              "productAmount": 58,
+              "adult": false,
+              "eco": false,
+              "title": "Фоторамки и Фотоальбомы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1259,
+              "productAmount": 54,
+              "adult": false,
+              "eco": false,
+              "title": "Ковры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1267,
+              "productAmount": 33,
+              "adult": false,
+              "eco": false,
+              "title": "Шкатулки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1257,
+              "productAmount": 30,
+              "adult": false,
+              "eco": false,
+              "title": "Мебель",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1268,
+              "productAmount": 30,
+              "adult": false,
+              "eco": false,
+              "title": "Зеркала",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1147,
+          "productAmount": 3479,
+          "adult": false,
+          "eco": false,
+          "title": "Товары для праздника",
+          "path": null,
+          "children": [
+            {
+              "id": 1762,
+              "productAmount": 1511,
+              "adult": false,
+              "eco": false,
+              "title": "Открытки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1292,
+              "productAmount": 1176,
+              "adult": false,
+              "eco": false,
+              "title": "Украшения",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1291,
+              "productAmount": 758,
+              "adult": false,
+              "eco": false,
+              "title": "Подарочная упаковка",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2466,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Свадебный декор",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1148,
+          "productAmount": 1339,
+          "adult": false,
+          "eco": false,
+          "title": "Инструменты",
+          "path": null,
+          "children": [
+            {
+              "id": 1324,
+              "productAmount": 967,
+              "adult": false,
+              "eco": false,
+              "title": "Ручной инструмент",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1325,
+              "productAmount": 311,
+              "adult": false,
+              "eco": false,
+              "title": "Электроинструмент",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 113,
+              "productAmount": 52,
+              "adult": false,
+              "eco": false,
+              "title": "Запчасти для бензоинструмента",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2015,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Пневмоинструменты и аксессуары",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1890,
+          "productAmount": 1143,
+          "adult": false,
+          "eco": false,
+          "title": "Сад и дача",
+          "path": null,
+          "children": [
+            {
+              "id": 1902,
+              "productAmount": 850,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для сада и огорода",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1903,
+              "productAmount": 190,
+              "adult": false,
+              "eco": false,
+              "title": "Ручной садовый инструмент",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1897,
+              "productAmount": 55,
+              "adult": false,
+              "eco": false,
+              "title": "Товары для барбекю и пикника",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1898,
+              "productAmount": 27,
+              "adult": false,
+              "eco": false,
+              "title": "Садовый декор",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1908,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для пикника",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1290,
+          "productAmount": 214,
+          "adult": false,
+          "eco": false,
+          "title": "Сантехника и Санфаянс",
+          "path": null,
+          "children": [
+            {
+              "id": 1673,
+              "productAmount": 19,
+              "adult": false,
+              "eco": false,
+              "title": "Герметизация",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2009,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Магистральные фильтры",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1901,
+          "productAmount": 67,
+          "adult": false,
+          "eco": false,
+          "title": "Инвентарь для уборки",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2503,
+          "productAmount": 59,
+          "adult": false,
+          "eco": false,
+          "title": "Краски и аэрозольная продукция",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2507,
+          "productAmount": 272,
+          "adult": false,
+          "eco": false,
+          "title": "Крепёж",
+          "path": null,
+          "children": [
+            {
+              "id": 2513,
+              "productAmount": 130,
+              "adult": false,
+              "eco": false,
+              "title": "Мебельная фурнитура",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2508,
+          "productAmount": 3,
+          "adult": false,
+          "eco": false,
+          "title": "Лакокрасочная продукция",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2014,
+          "productAmount": 17,
+          "adult": false,
+          "eco": false,
+          "title": "Абразивные материалы",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 1744,
+          "productAmount": 170,
+          "adult": false,
+          "eco": false,
+          "title": "Безопасность и Защита",
+          "path": null,
+          "children": [
+            {
+              "id": 1747,
+              "productAmount": 137,
+              "adult": false,
+              "eco": false,
+              "title": "Умный дом",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1817,
+              "productAmount": 33,
+              "adult": false,
+              "eco": false,
+              "title": "Средства индивидуальной защиты",
+              "path": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1140,
+      "title": "Красота и Здоровье",
+      "icon": "close-up",
+      "children": [
+        {
+          "id": 1410,
+          "productAmount": 2997,
+          "adult": false,
+          "eco": false,
+          "title": "Для лица",
+          "path": null,
+          "children": [
+            {
+              "id": 1423,
+              "productAmount": 1069,
+              "adult": false,
+              "eco": false,
+              "title": "Маски для лица",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1416,
+              "productAmount": 289,
+              "adult": false,
+              "eco": false,
+              "title": "Очищение",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1426,
+              "productAmount": 285,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за глазами",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1420,
+              "productAmount": 235,
+              "adult": false,
+              "eco": false,
+              "title": "Сыворотки и Флюиды",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1421,
+              "productAmount": 202,
+              "adult": false,
+              "eco": false,
+              "title": "Дневные кремы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1429,
+              "productAmount": 182,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за бровями и ресницами",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1430,
+              "productAmount": 173,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для лица",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1427,
+              "productAmount": 140,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за губами",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1419,
+              "productAmount": 104,
+              "adult": false,
+              "eco": false,
+              "title": "Скрабы и Пилинги",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1418,
+              "productAmount": 102,
+              "adult": false,
+              "eco": false,
+              "title": "Тоники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1417,
+              "productAmount": 84,
+              "adult": false,
+              "eco": false,
+              "title": "Снятие макияжа",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1422,
+              "productAmount": 45,
+              "adult": false,
+              "eco": false,
+              "title": "Ночной уход",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1424,
+              "productAmount": 41,
+              "adult": false,
+              "eco": false,
+              "title": "Масла для лица",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1432,
+              "productAmount": 26,
+              "adult": false,
+              "eco": false,
+              "title": "Наборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1431,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Сухая косметика",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1425,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за шеей и зоной декольте",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1411,
+          "productAmount": 1240,
+          "adult": false,
+          "eco": false,
+          "title": "Для волос",
+          "path": null,
+          "children": [
+            {
+              "id": 1433,
+              "productAmount": 303,
+              "adult": false,
+              "eco": false,
+              "title": "Шампуни",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1434,
+              "productAmount": 189,
+              "adult": false,
+              "eco": false,
+              "title": "Кондиционеры и Бальзамы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1435,
+              "productAmount": 159,
+              "adult": false,
+              "eco": false,
+              "title": "Маски для волос",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1442,
+              "productAmount": 106,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для волос",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1440,
+              "productAmount": 95,
+              "adult": false,
+              "eco": false,
+              "title": "Средства для укладки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1773,
+              "productAmount": 92,
+              "adult": false,
+              "eco": false,
+              "title": "Профессиональная косметика и аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1438,
+              "productAmount": 81,
+              "adult": false,
+              "eco": false,
+              "title": "Сыворотки и Элексиры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1439,
+              "productAmount": 79,
+              "adult": false,
+              "eco": false,
+              "title": "Краски для волос",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1437,
+              "productAmount": 66,
+              "adult": false,
+              "eco": false,
+              "title": "Масла для волос",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1441,
+              "productAmount": 39,
+              "adult": false,
+              "eco": false,
+              "title": "Специальный уход",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1443,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Наборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1436,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Скрабы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1412,
+          "productAmount": 2279,
+          "adult": false,
+          "eco": false,
+          "title": "Для тела",
+          "path": null,
+          "children": [
+            {
+              "id": 1444,
+              "productAmount": 279,
+              "adult": false,
+              "eco": false,
+              "title": "Мыло",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1457,
+              "productAmount": 273,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за ногтями",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1456,
+              "productAmount": 236,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за руками",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1449,
+              "productAmount": 193,
+              "adult": false,
+              "eco": false,
+              "title": "Кремы и Лосьоны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1459,
+              "productAmount": 145,
+              "adult": false,
+              "eco": false,
+              "title": "Депиляция",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1448,
+              "productAmount": 141,
+              "adult": false,
+              "eco": false,
+              "title": "Пилинги и Скрабы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1447,
+              "productAmount": 139,
+              "adult": false,
+              "eco": false,
+              "title": "Для ванны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1458,
+              "productAmount": 132,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за ногами",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1446,
+              "productAmount": 127,
+              "adult": false,
+              "eco": false,
+              "title": "Для душа",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1452,
+              "productAmount": 121,
+              "adult": false,
+              "eco": false,
+              "title": "Масла для тела и массажа",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1462,
+              "productAmount": 112,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для тела",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1445,
+              "productAmount": 91,
+              "adult": false,
+              "eco": false,
+              "title": "Жидкое мыло",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1453,
+              "productAmount": 62,
+              "adult": false,
+              "eco": false,
+              "title": "Дезодоранты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1783,
+              "productAmount": 48,
+              "adult": false,
+              "eco": false,
+              "title": "Лечебные пластыри",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1454,
+              "productAmount": 40,
+              "adult": false,
+              "eco": false,
+              "title": "Интимная гигиена",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1455,
+              "productAmount": 35,
+              "adult": false,
+              "eco": false,
+              "title": "Прокладки и Тампоны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1463,
+              "productAmount": 27,
+              "adult": false,
+              "eco": false,
+              "title": "Наборы для тела",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1450,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Маски и Обертывания",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1461,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Автозагар",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1460,
+              "productAmount": 18,
+              "adult": false,
+              "eco": false,
+              "title": "Защита от солнца",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1784,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Средства для бритья",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1451,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Сыворотки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1413,
+          "productAmount": 2113,
+          "adult": false,
+          "eco": false,
+          "title": "Декоративная косметика",
+          "path": null,
+          "children": [
+            {
+              "id": 1739,
+              "productAmount": 659,
+              "adult": false,
+              "eco": false,
+              "title": "Маникюр",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1476,
+              "productAmount": 500,
+              "adult": false,
+              "eco": false,
+              "title": "Парфюмерия",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1477,
+              "productAmount": 262,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для макияжа",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1469,
+              "productAmount": 125,
+              "adult": false,
+              "eco": false,
+              "title": "Тени",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1472,
+              "productAmount": 103,
+              "adult": false,
+              "eco": false,
+              "title": "Помада",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1465,
+              "productAmount": 77,
+              "adult": false,
+              "eco": false,
+              "title": "Тональные средства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1471,
+              "productAmount": 68,
+              "adult": false,
+              "eco": false,
+              "title": "Тушь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1475,
+              "productAmount": 57,
+              "adult": false,
+              "eco": false,
+              "title": "Лак для ногтей",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1470,
+              "productAmount": 55,
+              "adult": false,
+              "eco": false,
+              "title": "Карандаш и Подводка для глаз",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1467,
+              "productAmount": 40,
+              "adult": false,
+              "eco": false,
+              "title": "Пудра",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1827,
+              "productAmount": 36,
+              "adult": false,
+              "eco": false,
+              "title": "Карандаш для бровей",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1466,
+              "productAmount": 30,
+              "adult": false,
+              "eco": false,
+              "title": "Корректоры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1473,
+              "productAmount": 23,
+              "adult": false,
+              "eco": false,
+              "title": "Блеск для губ",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1474,
+              "productAmount": 19,
+              "adult": false,
+              "eco": false,
+              "title": "Карандаш для губ",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1763,
+              "productAmount": 19,
+              "adult": false,
+              "eco": false,
+              "title": "Органайзеры для косметики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1468,
+              "productAmount": 18,
+              "adult": false,
+              "eco": false,
+              "title": "Румяна",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1464,
+              "productAmount": 17,
+              "adult": false,
+              "eco": false,
+              "title": "Основа под макияж",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1414,
+          "productAmount": 63,
+          "adult": false,
+          "eco": false,
+          "title": "Для детей",
+          "path": null,
+          "children": [
+            {
+              "id": 1479,
+              "productAmount": 28,
+              "adult": false,
+              "eco": false,
+              "title": "Средства для купания",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1478,
+              "productAmount": 15,
+              "adult": false,
+              "eco": false,
+              "title": "Шампуни для детей",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1481,
+              "productAmount": 14,
+              "adult": false,
+              "eco": false,
+              "title": "Крем и молочко",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1480,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Масла для ухода и массажа",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2516,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Наборы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1415,
+          "productAmount": 234,
+          "adult": false,
+          "eco": false,
+          "title": "Для мужчин",
+          "path": null,
+          "children": [
+            {
+              "id": 1483,
+              "productAmount": 155,
+              "adult": false,
+              "eco": false,
+              "title": "Средства для бритья",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1482,
+              "productAmount": 27,
+              "adult": false,
+              "eco": false,
+              "title": "Шампуни и гели для душа",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1484,
+              "productAmount": 26,
+              "adult": false,
+              "eco": false,
+              "title": "Средства после бритья",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1923,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Средства для ухода за бородой",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1485,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Средства для умывания",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1488,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Дезодоранты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1486,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Кремы для лица",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1922,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Средства для укладки волос",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1428,
+          "productAmount": 276,
+          "adult": false,
+          "eco": false,
+          "title": "Уход за полостью рта",
+          "path": null,
+          "children": [
+            {
+              "id": 1842,
+              "productAmount": 159,
+              "adult": false,
+              "eco": false,
+              "title": "Отбеливание и очистка",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1909,
+              "productAmount": 86,
+              "adult": false,
+              "eco": false,
+              "title": "Зубная паста и гель",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 831,
+          "productAmount": 157,
+          "adult": false,
+          "eco": false,
+          "title": "Антисептики и антибактериальные жидкости",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 1859,
+          "productAmount": 278,
+          "adult": false,
+          "eco": false,
+          "title": "Массаж и Ортопедия",
+          "path": null,
+          "children": [
+            {
+              "id": 1880,
+              "productAmount": 155,
+              "adult": false,
+              "eco": false,
+              "title": "Массажеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1882,
+              "productAmount": 120,
+              "adult": false,
+              "eco": false,
+              "title": "Ортопедия",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1929,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Ингаляторы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1937,
+          "productAmount": 59,
+          "adult": false,
+          "eco": false,
+          "title": "Добавки",
+          "path": null,
+          "children": [
+            {
+              "id": 1938,
+              "productAmount": 36,
+              "adult": false,
+              "eco": false,
+              "title": "Витамины",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1939,
+              "productAmount": 19,
+              "adult": false,
+              "eco": false,
+              "title": "Пищевые добавки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1940,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Минералы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2007,
+          "productAmount": 271,
+          "adult": false,
+          "eco": false,
+          "title": "Маски и респираторы",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2453,
+          "productAmount": 57,
+          "adult": false,
+          "eco": false,
+          "title": "Товары для здоровья",
+          "path": null,
+          "children": [
+            {
+              "id": 2455,
+              "productAmount": 54,
+              "adult": false,
+              "eco": false,
+              "title": "Уход за больными и гигиена",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2454,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Тонометры",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2488,
+          "productAmount": 267,
+          "adult": false,
+          "eco": false,
+          "title": "Товары для бани",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2511,
+          "productAmount": 126,
+          "adult": false,
+          "eco": false,
+          "title": "Приборы и Аксессуары",
+          "path": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 635,
+      "title": "Детям и Мамам",
+      "icon": "stroller",
+      "children": [
+        {
+          "id": 636,
+          "productAmount": 586,
+          "adult": false,
+          "eco": false,
+          "title": "Для новорожденных",
+          "path": null,
+          "children": [
+            {
+              "id": 641,
+              "productAmount": 190,
+              "adult": false,
+              "eco": false,
+              "title": "Кормление",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 646,
+              "productAmount": 68,
+              "adult": false,
+              "eco": false,
+              "title": "Уход и Здоровье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 640,
+              "productAmount": 62,
+              "adult": false,
+              "eco": false,
+              "title": "Пеленальные подстилки и чехлы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 647,
+              "productAmount": 60,
+              "adult": false,
+              "eco": false,
+              "title": "Детская комната",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 642,
+              "productAmount": 55,
+              "adult": false,
+              "eco": false,
+              "title": "Для купания",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 639,
+              "productAmount": 44,
+              "adult": false,
+              "eco": false,
+              "title": "Подгузники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 643,
+              "productAmount": 43,
+              "adult": false,
+              "eco": false,
+              "title": "Коляски и Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 645,
+              "productAmount": 40,
+              "adult": false,
+              "eco": false,
+              "title": "Безопасность",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 644,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Автокресла",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 637,
+          "productAmount": 82,
+          "adult": false,
+          "eco": false,
+          "title": "Для мам",
+          "path": null,
+          "children": [
+            {
+              "id": 743,
+              "productAmount": 39,
+              "adult": false,
+              "eco": false,
+              "title": "Уход и Гигиена",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 744,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Рюкзаки и Слинги",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 746,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Молокоотсосы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 745,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Подушки для беременных",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 638,
+          "productAmount": 4999,
+          "adult": false,
+          "eco": false,
+          "title": "Игрушки",
+          "path": null,
+          "children": [
+            {
+              "id": 1670,
+              "productAmount": 1872,
+              "adult": false,
+              "eco": false,
+              "title": "Развивающие игрушки и головоломки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 749,
+              "productAmount": 648,
+              "adult": false,
+              "eco": false,
+              "title": "Конструкторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 758,
+              "productAmount": 475,
+              "adult": false,
+              "eco": false,
+              "title": "Развлекательные игрушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 748,
+              "productAmount": 385,
+              "adult": false,
+              "eco": false,
+              "title": "Игрушки для малышей",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 754,
+              "productAmount": 337,
+              "adult": false,
+              "eco": false,
+              "title": "Мягкие игрушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 750,
+              "productAmount": 288,
+              "adult": false,
+              "eco": false,
+              "title": "Машинки и Транспорт",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 755,
+              "productAmount": 238,
+              "adult": false,
+              "eco": false,
+              "title": "Игровые и Ролевые наборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 753,
+              "productAmount": 167,
+              "adult": false,
+              "eco": false,
+              "title": "Куклы и Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 757,
+              "productAmount": 167,
+              "adult": false,
+              "eco": false,
+              "title": "Игры на открытом воздухе",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 756,
+              "productAmount": 156,
+              "adult": false,
+              "eco": false,
+              "title": "Фигурки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 752,
+              "productAmount": 95,
+              "adult": false,
+              "eco": false,
+              "title": "Игрушечное оружие",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 759,
+              "productAmount": 84,
+              "adult": false,
+              "eco": false,
+              "title": "Музыкальные инструменты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 747,
+              "productAmount": 58,
+              "adult": false,
+              "eco": false,
+              "title": "Радиоуправляемые модели",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2548,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Кукольные домики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 751,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Железная дорога",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2471,
+          "productAmount": 77,
+          "adult": false,
+          "eco": false,
+          "title": "Детская безопасность",
+          "path": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 933,
+      "title": "Автотовары",
+      "icon": "car",
+      "children": [
+        {
+          "id": 934,
+          "productAmount": 2213,
+          "adult": false,
+          "eco": false,
+          "title": "Автоаксессуары",
+          "path": null,
+          "children": [
+            {
+              "id": 945,
+              "productAmount": 762,
+              "adult": false,
+              "eco": false,
+              "title": "Прочие автоаксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 950,
+              "productAmount": 455,
+              "adult": false,
+              "eco": false,
+              "title": "Держатели и Крепления",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 946,
+              "productAmount": 323,
+              "adult": false,
+              "eco": false,
+              "title": "Наклейки и Логотипы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 943,
+              "productAmount": 224,
+              "adult": false,
+              "eco": false,
+              "title": "Коврики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 944,
+              "productAmount": 194,
+              "adult": false,
+              "eco": false,
+              "title": "Чехлы и Накидки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1685,
+              "productAmount": 81,
+              "adult": false,
+              "eco": false,
+              "title": "Щетки и Скребки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 947,
+              "productAmount": 73,
+              "adult": false,
+              "eco": false,
+              "title": "Подушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 948,
+              "productAmount": 59,
+              "adult": false,
+              "eco": false,
+              "title": "Органайзеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 951,
+              "productAmount": 26,
+              "adult": false,
+              "eco": false,
+              "title": "Аптечки и аварийные наборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 949,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Детали салона",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 942,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Шторки солнцезащитные",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 935,
+          "productAmount": 88,
+          "adult": false,
+          "eco": false,
+          "title": "Тюнинг и Защита",
+          "path": null,
+          "children": [
+            {
+              "id": 982,
+              "productAmount": 30,
+              "adult": false,
+              "eco": false,
+              "title": "Защиты внешних частей",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 983,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Дефлекторы и Ветровики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 986,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Пленки тонировочные",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 987,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Спойлеры и Обтекатели",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 984,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Брызговики",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 936,
+          "productAmount": 280,
+          "adult": false,
+          "eco": false,
+          "title": "Оборудование и Инструменты",
+          "path": null,
+          "children": [
+            {
+              "id": 999,
+              "productAmount": 124,
+              "adult": false,
+              "eco": false,
+              "title": "Инструменты для авто",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1004,
+              "productAmount": 37,
+              "adult": false,
+              "eco": false,
+              "title": "Минимойки и Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1001,
+              "productAmount": 29,
+              "adult": false,
+              "eco": false,
+              "title": "Компрессоры, Насосы и Манометры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1003,
+              "productAmount": 28,
+              "adult": false,
+              "eco": false,
+              "title": "Тросы и Цепи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1007,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Провода и Кабели",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1888,
+              "productAmount": 15,
+              "adult": false,
+              "eco": false,
+              "title": "Аппараты для химчистки и комплектующие",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1005,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Инверторы и зарядные устройства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 998,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Автохолодильники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1006,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Пылесосы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 997,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Вентиляторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1000,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Домкраты и Лебедки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1002,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Противоугонные устройства",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 939,
+          "productAmount": 687,
+          "adult": false,
+          "eco": false,
+          "title": "Электроника",
+          "path": null,
+          "children": [
+            {
+              "id": 1008,
+              "productAmount": 324,
+              "adult": false,
+              "eco": false,
+              "title": "Автоэлектрика",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1014,
+              "productAmount": 145,
+              "adult": false,
+              "eco": false,
+              "title": "Автосигнализация",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1013,
+              "productAmount": 134,
+              "adult": false,
+              "eco": false,
+              "title": "Камеры заднего вида",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1009,
+              "productAmount": 58,
+              "adult": false,
+              "eco": false,
+              "title": "Видеорегистраторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1010,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Радар-детекторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1012,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Парктроники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1011,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "GPS-навигаторы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 941,
+          "productAmount": 166,
+          "adult": false,
+          "eco": false,
+          "title": "Акустика и Видео",
+          "path": null,
+          "children": [
+            {
+              "id": 1026,
+              "productAmount": 121,
+              "adult": false,
+              "eco": false,
+              "title": "Автомагнитолы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1028,
+              "productAmount": 25,
+              "adult": false,
+              "eco": false,
+              "title": "FM трансмиттеры и модуляторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1025,
+              "productAmount": 13,
+              "adult": false,
+              "eco": false,
+              "title": "Автоакустика и Усилители",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1027,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Антенны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1030,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Громкая связь",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 937,
+          "productAmount": 283,
+          "adult": false,
+          "eco": false,
+          "title": "Автозапчасти",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 938,
+          "productAmount": 638,
+          "adult": false,
+          "eco": false,
+          "title": "Автохимия и Косметика",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 940,
+          "productAmount": 98,
+          "adult": false,
+          "eco": false,
+          "title": "Мототовары и Аксессуары",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2514,
+          "productAmount": 22,
+          "adult": false,
+          "eco": false,
+          "title": "Масла и Технические жидкости",
+          "path": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 1329,
+      "title": "Творчество и Хобби",
+      "icon": "paint-palette",
+      "children": [
+        {
+          "id": 1338,
+          "productAmount": 550,
+          "adult": false,
+          "eco": false,
+          "title": "Моделирование и Игры",
+          "path": null,
+          "children": [
+            {
+              "id": 1396,
+              "productAmount": 260,
+              "adult": false,
+              "eco": false,
+              "title": "Настольные игры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1397,
+              "productAmount": 123,
+              "adult": false,
+              "eco": false,
+              "title": "Пазлы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1391,
+              "productAmount": 29,
+              "adult": false,
+              "eco": false,
+              "title": "Сборные модели",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1394,
+              "productAmount": 26,
+              "adult": false,
+              "eco": false,
+              "title": "Конструкторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1395,
+              "productAmount": 26,
+              "adult": false,
+              "eco": false,
+              "title": "Наборы для экспериментов",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1398,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Развивающие игры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1954,
+              "productAmount": 23,
+              "adult": false,
+              "eco": false,
+              "title": "Выжигание по дереву",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1399,
+              "productAmount": 22,
+              "adult": false,
+              "eco": false,
+              "title": "3D-ручки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1393,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Головоломки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1392,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Игрушечные модели",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1339,
+          "productAmount": 2745,
+          "adult": false,
+          "eco": false,
+          "title": "Рукоделие",
+          "path": null,
+          "children": [
+            {
+              "id": 1331,
+              "productAmount": 841,
+              "adult": false,
+              "eco": false,
+              "title": "Шитье",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1335,
+              "productAmount": 422,
+              "adult": false,
+              "eco": false,
+              "title": "Скрапбукинг",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1407,
+              "productAmount": 287,
+              "adult": false,
+              "eco": false,
+              "title": "Изготовление бижутерии",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1330,
+              "productAmount": 269,
+              "adult": false,
+              "eco": false,
+              "title": "Вязание",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1400,
+              "productAmount": 248,
+              "adult": false,
+              "eco": false,
+              "title": "Алмазная вышивка",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1336,
+              "productAmount": 237,
+              "adult": false,
+              "eco": false,
+              "title": "Декорирование",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1332,
+              "productAmount": 103,
+              "adult": false,
+              "eco": false,
+              "title": "Вышивание",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1337,
+              "productAmount": 103,
+              "adult": false,
+              "eco": false,
+              "title": "Лепка и Скульптура",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1401,
+              "productAmount": 84,
+              "adult": false,
+              "eco": false,
+              "title": "Изготовление кукол и игрушек",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1333,
+              "productAmount": 59,
+              "adult": false,
+              "eco": false,
+              "title": "Бисероплетение",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1404,
+              "productAmount": 46,
+              "adult": false,
+              "eco": false,
+              "title": "Фоамиран",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1403,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Оригами",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2019,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Линогравюры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1402,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Квиллинг",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1405,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Валяние",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1340,
+          "productAmount": 9,
+          "adult": false,
+          "eco": false,
+          "title": "Свечи и Мыловарение",
+          "path": null,
+          "children": [
+            {
+              "id": 1408,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Мыловарение",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1409,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Изготовление свечей",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1752,
+          "productAmount": 170,
+          "adult": false,
+          "eco": false,
+          "title": "Кальян",
+          "path": null,
+          "children": [
+            {
+              "id": 1756,
+              "productAmount": 117,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1753,
+              "productAmount": 39,
+              "adult": false,
+              "eco": false,
+              "title": "Кальяны",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1755,
+              "productAmount": 14,
+              "adult": false,
+              "eco": false,
+              "title": "Уголь",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2517,
+          "productAmount": 6,
+          "adult": false,
+          "eco": false,
+          "title": "Косплей",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2492,
+          "productAmount": 634,
+          "adult": false,
+          "eco": false,
+          "title": "Другое",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2526,
+          "productAmount": 22,
+          "adult": false,
+          "eco": false,
+          "title": "Работа с эпоксидной смолой",
+          "path": null,
+          "children": [
+            {
+              "id": 2527,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Силиконовые формы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2528,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Колеры (красители)",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2531,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Инструменты для работы с эпоксидной смолой",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1778,
+          "productAmount": 208,
+          "adult": false,
+          "eco": false,
+          "title": "Музыкальные инструменты и оборудование",
+          "path": null,
+          "children": [
+            {
+              "id": 1779,
+              "productAmount": 101,
+              "adult": false,
+              "eco": false,
+              "title": "Гитары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2020,
+              "productAmount": 58,
+              "adult": false,
+              "eco": false,
+              "title": "Ударные инструменты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2022,
+              "productAmount": 30,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2021,
+              "productAmount": 19,
+              "adult": false,
+              "eco": false,
+              "title": "Духовые инструменты",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1797,
+          "productAmount": 938,
+          "adult": false,
+          "eco": false,
+          "title": "Рисование",
+          "path": null,
+          "children": [
+            {
+              "id": 1334,
+              "productAmount": 342,
+              "adult": false,
+              "eco": false,
+              "title": "Для художников",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1777,
+              "productAmount": 280,
+              "adult": false,
+              "eco": false,
+              "title": "Картины по номерам",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1798,
+              "productAmount": 232,
+              "adult": false,
+              "eco": false,
+              "title": "Раскраски",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 808,
+              "productAmount": 84,
+              "adult": false,
+              "eco": false,
+              "title": "Скетчбуки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1918,
+          "productAmount": 238,
+          "adult": false,
+          "eco": false,
+          "title": "Пиротехника",
+          "path": null,
+          "children": [
+            {
+              "id": 1920,
+              "productAmount": 87,
+              "adult": false,
+              "eco": false,
+              "title": "Салюты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1919,
+              "productAmount": 58,
+              "adult": false,
+              "eco": false,
+              "title": "Петарды",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1941,
+              "productAmount": 51,
+              "adult": false,
+              "eco": false,
+              "title": "Цветной дым",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1921,
+              "productAmount": 15,
+              "adult": false,
+              "eco": false,
+              "title": "Бенгальские огни",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2490,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Римские свечи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1942,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Факелы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2489,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Ракеты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1943,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Краски Холи",
+              "path": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1821,
+      "title": "Продукты питания",
+      "icon": "cafe",
+      "children": [
+        {
+          "id": 828,
+          "productAmount": 2485,
+          "adult": false,
+          "eco": false,
+          "title": "Продукты",
+          "path": null,
+          "children": [
+            {
+              "id": 2483,
+              "productAmount": 1267,
+              "adult": false,
+              "eco": false,
+              "title": "Сладости",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2478,
+              "productAmount": 395,
+              "adult": false,
+              "eco": false,
+              "title": "Кофе и чаи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2475,
+              "productAmount": 304,
+              "adult": false,
+              "eco": false,
+              "title": "Бакалея",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2476,
+              "productAmount": 256,
+              "adult": false,
+              "eco": false,
+              "title": "Другое",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2477,
+              "productAmount": 125,
+              "adult": false,
+              "eco": false,
+              "title": "Консервы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2480,
+              "productAmount": 100,
+              "adult": false,
+              "eco": false,
+              "title": "Напитки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2484,
+              "productAmount": 32,
+              "adult": false,
+              "eco": false,
+              "title": "Хлебцы и сухарики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2481,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Орехи и сухофрукты",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 817,
+          "productAmount": 1742,
+          "adult": false,
+          "eco": false,
+          "title": "Экопродукты",
+          "path": null,
+          "children": [
+            {
+              "id": 142,
+              "productAmount": 380,
+              "adult": false,
+              "eco": false,
+              "title": "Бакалея",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 114,
+              "productAmount": 371,
+              "adult": false,
+              "eco": false,
+              "title": "Сладости",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 143,
+              "productAmount": 362,
+              "adult": false,
+              "eco": false,
+              "title": "Кофе и чаи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 330,
+              "productAmount": 231,
+              "adult": false,
+              "eco": false,
+              "title": "Другое",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1913,
+              "productAmount": 111,
+              "adult": false,
+              "eco": false,
+              "title": "Правильное питание",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 328,
+              "productAmount": 98,
+              "adult": false,
+              "eco": false,
+              "title": "Мёд",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 326,
+              "productAmount": 93,
+              "adult": false,
+              "eco": false,
+              "title": "Орехи и сухофрукты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 329,
+              "productAmount": 53,
+              "adult": false,
+              "eco": false,
+              "title": "Напитки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 366,
+              "productAmount": 43,
+              "adult": false,
+              "eco": false,
+              "title": "Хлебцы и сухарики",
+              "path": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031,
+      "title": "Спорт",
+      "icon": "muscle",
+      "children": [
+        {
+          "id": 1032,
+          "productAmount": 153,
+          "adult": false,
+          "eco": false,
+          "title": "Аксессуары",
+          "path": null,
+          "children": [
+            {
+              "id": 1069,
+              "productAmount": 45,
+              "adult": false,
+              "eco": false,
+              "title": "Суппорты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1041,
+              "productAmount": 43,
+              "adult": false,
+              "eco": false,
+              "title": "Рюкзаки и Сумки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1042,
+              "productAmount": 27,
+              "adult": false,
+              "eco": false,
+              "title": "Солнцезащитные очки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1049,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Шарфы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1048,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Перчатки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1040,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Головные уборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1050,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Термоаксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1046,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Ремни",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1043,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для обуви",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1044,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Шагомеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1045,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Секундомеры",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1033,
+          "productAmount": 299,
+          "adult": false,
+          "eco": false,
+          "title": "Тренажеры и Фитнес",
+          "path": null,
+          "children": [
+            {
+              "id": 1053,
+              "productAmount": 212,
+              "adult": false,
+              "eco": false,
+              "title": "Оборудование и аксессуары для фитнеса",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1700,
+              "productAmount": 74,
+              "adult": false,
+              "eco": false,
+              "title": "Спортивное питание",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1052,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Силовые тренировки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1051,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Кардиотренажеры",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1034,
+          "productAmount": 485,
+          "adult": false,
+          "eco": false,
+          "title": "Туризм",
+          "path": null,
+          "children": [
+            {
+              "id": 1083,
+              "productAmount": 186,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1079,
+              "productAmount": 99,
+              "adult": false,
+              "eco": false,
+              "title": "Фонари",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1076,
+              "productAmount": 79,
+              "adult": false,
+              "eco": false,
+              "title": "Посуда и костровое снаряжение",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1078,
+              "productAmount": 47,
+              "adult": false,
+              "eco": false,
+              "title": "Туристические инструменты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1072,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Рюкзаки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1077,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Дорожное снаряжение",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1073,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Туристические коврики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1081,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Компасы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1082,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Бинокли",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1070,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Палатки и Тенты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1074,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Туристические матрасы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1075,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Кемпинговая мебель",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2016,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Туристическая еда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1071,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Спальные мешки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1035,
+          "productAmount": 436,
+          "adult": false,
+          "eco": false,
+          "title": "Рыбалка",
+          "path": null,
+          "children": [
+            {
+              "id": 1099,
+              "productAmount": 123,
+              "adult": false,
+              "eco": false,
+              "title": "Снасти",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1098,
+              "productAmount": 90,
+              "adult": false,
+              "eco": false,
+              "title": "Приманка",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1089,
+              "productAmount": 60,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1092,
+              "productAmount": 36,
+              "adult": false,
+              "eco": false,
+              "title": "Оборудование и Инструменты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1090,
+              "productAmount": 31,
+              "adult": false,
+              "eco": false,
+              "title": "Катушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1095,
+              "productAmount": 25,
+              "adult": false,
+              "eco": false,
+              "title": "Очки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1097,
+              "productAmount": 23,
+              "adult": false,
+              "eco": false,
+              "title": "Прикормка",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1101,
+              "productAmount": 17,
+              "adult": false,
+              "eco": false,
+              "title": "Удилища",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1096,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Перчатки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1102,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Эхолоты и видеокамеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1094,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1093,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Обувь",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1091,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Лодки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1036,
+          "productAmount": 15,
+          "adult": false,
+          "eco": false,
+          "title": "Активный отдых",
+          "path": null,
+          "children": [
+            {
+              "id": 1958,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Настольный теннис",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1116,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Шахматы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1957,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Теннис",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1959,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Бадминтон",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1037,
+          "productAmount": 147,
+          "adult": false,
+          "eco": false,
+          "title": "Велоспорт",
+          "path": null,
+          "children": [
+            {
+              "id": 1118,
+              "productAmount": 75,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для велосипеда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1120,
+              "productAmount": 47,
+              "adult": false,
+              "eco": false,
+              "title": "Запчасти",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1119,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Защита и Экипировка",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1117,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Велосипеды",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1038,
+          "productAmount": 65,
+          "adult": false,
+          "eco": false,
+          "title": "Ролики, Скейтборды и Самокаты",
+          "path": null,
+          "children": [
+            {
+              "id": 1925,
+              "productAmount": 31,
+              "adult": false,
+              "eco": false,
+              "title": "Защита и Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1121,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Самокаты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1123,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Ролики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1124,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Скейтборд",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1927,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Пенниборды",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1125,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Вейвборды",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1039,
+          "productAmount": 162,
+          "adult": false,
+          "eco": false,
+          "title": "Бассейн, Пляж, Водный спорт",
+          "path": null,
+          "children": [
+            {
+              "id": 1127,
+              "productAmount": 103,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для пляжа",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1126,
+              "productAmount": 53,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для бассейна",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2470,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Обувь",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1695,
+          "productAmount": 109,
+          "adult": false,
+          "eco": false,
+          "title": "Зимний спорт",
+          "path": null,
+          "children": [
+            {
+              "id": 1811,
+              "productAmount": 80,
+              "adult": false,
+              "eco": false,
+              "title": "Сноутюбы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1696,
+              "productAmount": 29,
+              "adult": false,
+              "eco": false,
+              "title": "Сноуборды и горные лыжи",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1823,
+          "productAmount": 8,
+          "adult": false,
+          "eco": false,
+          "title": "Средства самообороны",
+          "path": null,
+          "children": [
+            {
+              "id": 1824,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Баллончики аэрозольные",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1848,
+          "productAmount": 11,
+          "adult": false,
+          "eco": false,
+          "title": "Командный спорт",
+          "path": null,
+          "children": [
+            {
+              "id": 1849,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Футбол",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1876,
+          "productAmount": 110,
+          "adult": false,
+          "eco": false,
+          "title": "Единоборства",
+          "path": null,
+          "children": [
+            {
+              "id": 1877,
+              "productAmount": 98,
+              "adult": false,
+              "eco": false,
+              "title": "Бокс",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2542,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "ММА",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2456,
+          "productAmount": 37,
+          "adult": false,
+          "eco": false,
+          "title": "Охота",
+          "path": null,
+          "children": [
+            {
+              "id": 2457,
+              "productAmount": 37,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары для оружия",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2518,
+          "productAmount": 2,
+          "adult": false,
+          "eco": false,
+          "title": "Фехтование",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2547,
+          "productAmount": 1,
+          "adult": false,
+          "eco": false,
+          "title": "Другое",
+          "path": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 802,
+      "title": "Бытовая техника",
+      "icon": "washing-machine",
+      "children": [
+        {
+          "id": 891,
+          "productAmount": 287,
+          "adult": false,
+          "eco": false,
+          "title": "Для кухни",
+          "path": null,
+          "children": [
+            {
+              "id": 906,
+              "productAmount": 70,
+              "adult": false,
+              "eco": false,
+              "title": "Чайники",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1896,
+              "productAmount": 56,
+              "adult": false,
+              "eco": false,
+              "title": "Кухонные весы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 897,
+              "productAmount": 47,
+              "adult": false,
+              "eco": false,
+              "title": "Блендеры и Миксеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 901,
+              "productAmount": 22,
+              "adult": false,
+              "eco": false,
+              "title": "Упаковка, хранение и консервация",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 898,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Комбайны и Мясорубки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 905,
+              "productAmount": 19,
+              "adult": false,
+              "eco": false,
+              "title": "Кофемашины",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 900,
+              "productAmount": 13,
+              "adult": false,
+              "eco": false,
+              "title": "Компактные плиты и печи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2464,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Вафельницы и орешницы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2468,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Кофемолки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 902,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Тостеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 908,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "СВЧ-печи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 899,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Мультиварки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 904,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Электрогрили",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 903,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Бутербродницы и Ростер",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2463,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Блинницы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 892,
+          "productAmount": 161,
+          "adult": false,
+          "eco": false,
+          "title": "Климатическая техника",
+          "path": null,
+          "children": [
+            {
+              "id": 909,
+              "productAmount": 69,
+              "adult": false,
+              "eco": false,
+              "title": "Обогреватели",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2487,
+              "productAmount": 36,
+              "adult": false,
+              "eco": false,
+              "title": "Теплые полы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 910,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Увлажнители воздуха",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 912,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Вентиляторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 913,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Кондиционеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 911,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Воздухоочистители",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 893,
+          "productAmount": 253,
+          "adult": false,
+          "eco": false,
+          "title": "Для дома",
+          "path": null,
+          "children": [
+            {
+              "id": 914,
+              "productAmount": 124,
+              "adult": false,
+              "eco": false,
+              "title": "Пылесосы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1730,
+              "productAmount": 48,
+              "adult": false,
+              "eco": false,
+              "title": "Будильники и часы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 915,
+              "productAmount": 36,
+              "adult": false,
+              "eco": false,
+              "title": "Утюги",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 916,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Напольные весы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1729,
+              "productAmount": 14,
+              "adult": false,
+              "eco": false,
+              "title": "Погодные станции",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 895,
+          "productAmount": 266,
+          "adult": false,
+          "eco": false,
+          "title": "Техника для красоты и здоровья",
+          "path": null,
+          "children": [
+            {
+              "id": 919,
+              "productAmount": 61,
+              "adult": false,
+              "eco": false,
+              "title": "Электробритвы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 918,
+              "productAmount": 52,
+              "adult": false,
+              "eco": false,
+              "title": "Выпрямители и Щипцы для волос",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1748,
+              "productAmount": 48,
+              "adult": false,
+              "eco": false,
+              "title": "Оборудование для маникюра",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 917,
+              "productAmount": 35,
+              "adult": false,
+              "eco": false,
+              "title": "Фены",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 920,
+              "productAmount": 33,
+              "adult": false,
+              "eco": false,
+              "title": "Триммеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2485,
+              "productAmount": 20,
+              "adult": false,
+              "eco": false,
+              "title": "Машинки для стрижки волос",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 921,
+              "productAmount": 8,
+              "adult": false,
+              "eco": false,
+              "title": "Косметологические аппараты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 922,
+              "productAmount": 7,
+              "adult": false,
+              "eco": false,
+              "title": "Эпиляторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 923,
+              "productAmount": 2,
+              "adult": false,
+              "eco": false,
+              "title": "Электробигуди",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 896,
+          "productAmount": 98,
+          "adult": false,
+          "eco": false,
+          "title": "Прочая техника",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 894,
+          "productAmount": 12,
+          "adult": false,
+          "eco": false,
+          "title": "Крупная бытовая техника",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2010,
+          "productAmount": 208,
+          "adult": false,
+          "eco": false,
+          "title": "Запчасти для бытовой техники",
+          "path": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 1536,
+      "title": "Канцтовары",
+      "icon": "pencil",
+      "children": [
+        {
+          "id": 1537,
+          "productAmount": 747,
+          "adult": false,
+          "eco": false,
+          "title": "Письменные принадлежности",
+          "path": null,
+          "children": [
+            {
+              "id": 1555,
+              "productAmount": 432,
+              "adult": false,
+              "eco": false,
+              "title": "Ручки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1549,
+              "productAmount": 81,
+              "adult": false,
+              "eco": false,
+              "title": "Карандаши",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1550,
+              "productAmount": 80,
+              "adult": false,
+              "eco": false,
+              "title": "Ластики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1554,
+              "productAmount": 77,
+              "adult": false,
+              "eco": false,
+              "title": "Маркеры и Корректоры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1553,
+              "productAmount": 24,
+              "adult": false,
+              "eco": false,
+              "title": "Фломастеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1551,
+              "productAmount": 18,
+              "adult": false,
+              "eco": false,
+              "title": "Точилки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1552,
+              "productAmount": 14,
+              "adult": false,
+              "eco": false,
+              "title": "Граффити-маркеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2472,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Наборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2474,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Стержни",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1846,
+              "productAmount": 5,
+              "adult": false,
+              "eco": false,
+              "title": "Чернила и Тушь",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1760,
+          "productAmount": 1246,
+          "adult": false,
+          "eco": false,
+          "title": "Офисные принадлежности",
+          "path": null,
+          "children": [
+            {
+              "id": 1542,
+              "productAmount": 401,
+              "adult": false,
+              "eco": false,
+              "title": "Папки, Файлы, Обложки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1548,
+              "productAmount": 251,
+              "adult": false,
+              "eco": false,
+              "title": "Степлеры и дыроколы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1931,
+              "productAmount": 191,
+              "adult": false,
+              "eco": false,
+              "title": "Мелкоофисные аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1836,
+              "productAmount": 71,
+              "adult": false,
+              "eco": false,
+              "title": "Органайзеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1835,
+              "productAmount": 66,
+              "adult": false,
+              "eco": false,
+              "title": "Клей",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1547,
+              "productAmount": 57,
+              "adult": false,
+              "eco": false,
+              "title": "Канцелярские ножи",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1540,
+              "productAmount": 41,
+              "adult": false,
+              "eco": false,
+              "title": "Липкие ленты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1843,
+              "productAmount": 37,
+              "adult": false,
+              "eco": false,
+              "title": "Клейкая лента",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1829,
+              "productAmount": 35,
+              "adult": false,
+              "eco": false,
+              "title": "Закладки для книг",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1543,
+              "productAmount": 32,
+              "adult": false,
+              "eco": false,
+              "title": "Кнопки, Скрепки, Зажимы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1834,
+              "productAmount": 31,
+              "adult": false,
+              "eco": false,
+              "title": "Калькуляторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1539,
+              "productAmount": 17,
+              "adult": false,
+              "eco": false,
+              "title": "Ножницы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1833,
+              "productAmount": 11,
+              "adult": false,
+              "eco": false,
+              "title": "Визитницы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1837,
+              "productAmount": 1,
+              "adult": false,
+              "eco": false,
+              "title": "Лотки для бумаг",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1761,
+          "productAmount": 510,
+          "adult": false,
+          "eco": false,
+          "title": "Школьные товары",
+          "path": null,
+          "children": [
+            {
+              "id": 1541,
+              "productAmount": 268,
+              "adult": false,
+              "eco": false,
+              "title": "Пеналы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1544,
+              "productAmount": 130,
+              "adult": false,
+              "eco": false,
+              "title": "Канцелярские наборы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1538,
+              "productAmount": 89,
+              "adult": false,
+              "eco": false,
+              "title": "Ранцы и Рюкзаки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2467,
+              "productAmount": 13,
+              "adult": false,
+              "eco": false,
+              "title": "Сумки для обуви",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1546,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Детские мелки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1799,
+          "productAmount": 1349,
+          "adult": false,
+          "eco": false,
+          "title": "Бумажная продукция",
+          "path": null,
+          "children": [
+            {
+              "id": 1800,
+              "productAmount": 791,
+              "adult": false,
+              "eco": false,
+              "title": "Блокноты, Ежедневники и Записные книжки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 815,
+              "productAmount": 237,
+              "adult": false,
+              "eco": false,
+              "title": "Бумага для записей, стикеры",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1845,
+              "productAmount": 179,
+              "adult": false,
+              "eco": false,
+              "title": "Тетради",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2005,
+              "productAmount": 123,
+              "adult": false,
+              "eco": false,
+              "title": "Офисная бумага",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2004,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Альбомы для рисования",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1930,
+              "productAmount": 3,
+              "adult": false,
+              "eco": false,
+              "title": "Бумага копировальная",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1838,
+          "productAmount": 359,
+          "adult": false,
+          "eco": false,
+          "title": "Чертежные принадлежности",
+          "path": null,
+          "children": [
+            {
+              "id": 1839,
+              "productAmount": 359,
+              "adult": false,
+              "eco": false,
+              "title": "Линейки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2458,
+          "productAmount": 132,
+          "adult": false,
+          "eco": false,
+          "title": "Демонстрационные доски",
+          "path": null,
+          "children": [
+            {
+              "id": 2459,
+              "productAmount": 126,
+              "adult": false,
+              "eco": false,
+              "title": "Магнитные доски",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2544,
+              "productAmount": 6,
+              "adult": false,
+              "eco": false,
+              "title": "Информационные доски",
+              "path": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "title": "Книги",
+      "icon": "book",
+      "children": []
+    },
+    {
+      "id": 1749,
+      "title": "Товары для взрослых",
+      "icon": "gender-symbol",
+      "children": [
+        {
+          "id": 1769,
+          "productAmount": 534,
+          "adult": true,
+          "eco": false,
+          "title": "Секс-игрушки",
+          "path": null,
+          "children": [
+            {
+              "id": 1770,
+              "productAmount": 145,
+              "adult": true,
+              "eco": false,
+              "title": "Мастурбаторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1750,
+              "productAmount": 139,
+              "adult": true,
+              "eco": false,
+              "title": "Вибраторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1771,
+              "productAmount": 125,
+              "adult": true,
+              "eco": false,
+              "title": "Фаллоимитаторы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1772,
+              "productAmount": 109,
+              "adult": true,
+              "eco": false,
+              "title": "Анальные игpушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1788,
+              "productAmount": 16,
+              "adult": true,
+              "eco": false,
+              "title": "Вагинальные шарики",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 296,
+          "productAmount": 537,
+          "adult": true,
+          "eco": false,
+          "title": "Эротическое белье",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 1910,
+          "productAmount": 217,
+          "adult": true,
+          "eco": false,
+          "title": "БДСМ",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 1751,
+          "productAmount": 192,
+          "adult": true,
+          "eco": false,
+          "title": "Лубриканты",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2460,
+          "productAmount": 157,
+          "adult": true,
+          "eco": false,
+          "title": "Другое",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2496,
+          "productAmount": 119,
+          "adult": true,
+          "eco": false,
+          "title": "Презервативы",
+          "path": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 1489,
+      "title": "Зоотовары",
+      "icon": "paw",
+      "children": [
+        {
+          "id": 1490,
+          "productAmount": 887,
+          "adult": false,
+          "eco": false,
+          "title": "Собаки",
+          "path": null,
+          "children": [
+            {
+              "id": 1506,
+              "productAmount": 179,
+              "adult": false,
+              "eco": false,
+              "title": "Ошейники и Поводки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1497,
+              "productAmount": 139,
+              "adult": false,
+              "eco": false,
+              "title": "Лакомства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1500,
+              "productAmount": 128,
+              "adult": false,
+              "eco": false,
+              "title": "Гигиена",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1501,
+              "productAmount": 83,
+              "adult": false,
+              "eco": false,
+              "title": "Груминг и Косметика",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1502,
+              "productAmount": 83,
+              "adult": false,
+              "eco": false,
+              "title": "Игрушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1505,
+              "productAmount": 62,
+              "adult": false,
+              "eco": false,
+              "title": "Одежда",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1498,
+              "productAmount": 49,
+              "adult": false,
+              "eco": false,
+              "title": "Ветеринарная аптека",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1499,
+              "productAmount": 48,
+              "adult": false,
+              "eco": false,
+              "title": "Витамины и Пищевые добавки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1504,
+              "productAmount": 41,
+              "adult": false,
+              "eco": false,
+              "title": "Миски, Контейнеры, Автокормушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1495,
+              "productAmount": 33,
+              "adult": false,
+              "eco": false,
+              "title": "Сухие корма",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1496,
+              "productAmount": 16,
+              "adult": false,
+              "eco": false,
+              "title": "Консервы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2498,
+              "productAmount": 13,
+              "adult": false,
+              "eco": false,
+              "title": "Лежанки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1503,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Транспортировка",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1491,
+          "productAmount": 733,
+          "adult": false,
+          "eco": false,
+          "title": "Кошки",
+          "path": null,
+          "children": [
+            {
+              "id": 1512,
+              "productAmount": 137,
+              "adult": false,
+              "eco": false,
+              "title": "Гигиена",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1509,
+              "productAmount": 116,
+              "adult": false,
+              "eco": false,
+              "title": "Наполнители",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1514,
+              "productAmount": 83,
+              "adult": false,
+              "eco": false,
+              "title": "Игрушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1511,
+              "productAmount": 82,
+              "adult": false,
+              "eco": false,
+              "title": "Витамины и Лакомства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1516,
+              "productAmount": 76,
+              "adult": false,
+              "eco": false,
+              "title": "Когтеточки и Домики",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1517,
+              "productAmount": 50,
+              "adult": false,
+              "eco": false,
+              "title": "Миски, Контейнеры, Автокормушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1518,
+              "productAmount": 39,
+              "adult": false,
+              "eco": false,
+              "title": "Ошейники и Шлейки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1507,
+              "productAmount": 38,
+              "adult": false,
+              "eco": false,
+              "title": "Сухой корм",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1510,
+              "productAmount": 33,
+              "adult": false,
+              "eco": false,
+              "title": "Ветеринарная аптека",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1513,
+              "productAmount": 28,
+              "adult": false,
+              "eco": false,
+              "title": "Груминг и Косметика",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1508,
+              "productAmount": 27,
+              "adult": false,
+              "eco": false,
+              "title": "Консервы",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1515,
+              "productAmount": 22,
+              "adult": false,
+              "eco": false,
+              "title": "Транспортировка",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1492,
+          "productAmount": 278,
+          "adult": false,
+          "eco": false,
+          "title": "Грызуны",
+          "path": null,
+          "children": [
+            {
+              "id": 1521,
+              "productAmount": 98,
+              "adult": false,
+              "eco": false,
+              "title": "Лакомства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1519,
+              "productAmount": 84,
+              "adult": false,
+              "eco": false,
+              "title": "Сухой корм",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1522,
+              "productAmount": 34,
+              "adult": false,
+              "eco": false,
+              "title": "Клетки, Переноски и Кормушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1523,
+              "productAmount": 22,
+              "adult": false,
+              "eco": false,
+              "title": "Наполнители",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1520,
+              "productAmount": 21,
+              "adult": false,
+              "eco": false,
+              "title": "Гигиена и Косметика",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 2497,
+              "productAmount": 15,
+              "adult": false,
+              "eco": false,
+              "title": "Домики для грызунов",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1524,
+              "productAmount": 4,
+              "adult": false,
+              "eco": false,
+              "title": "Игрушки",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1493,
+          "productAmount": 266,
+          "adult": false,
+          "eco": false,
+          "title": "Рыбки",
+          "path": null,
+          "children": [
+            {
+              "id": 1526,
+              "productAmount": 76,
+              "adult": false,
+              "eco": false,
+              "title": "Аксессуары",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1525,
+              "productAmount": 74,
+              "adult": false,
+              "eco": false,
+              "title": "Корм",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1529,
+              "productAmount": 71,
+              "adult": false,
+              "eco": false,
+              "title": "Декорации",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1528,
+              "productAmount": 36,
+              "adult": false,
+              "eco": false,
+              "title": "Препараты",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1527,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Аквариумы",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 1494,
+          "productAmount": 145,
+          "adult": false,
+          "eco": false,
+          "title": "Птицы",
+          "path": null,
+          "children": [
+            {
+              "id": 1530,
+              "productAmount": 63,
+              "adult": false,
+              "eco": false,
+              "title": "Сухой корм",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1531,
+              "productAmount": 33,
+              "adult": false,
+              "eco": false,
+              "title": "Лакомства",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1532,
+              "productAmount": 18,
+              "adult": false,
+              "eco": false,
+              "title": "Витамины",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1534,
+              "productAmount": 12,
+              "adult": false,
+              "eco": false,
+              "title": "Клетки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1535,
+              "productAmount": 10,
+              "adult": false,
+              "eco": false,
+              "title": "Игрушки",
+              "path": null,
+              "children": []
+            },
+            {
+              "id": 1533,
+              "productAmount": 9,
+              "adult": false,
+              "eco": false,
+              "title": "Гигиена",
+              "path": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": 2549,
+          "productAmount": 14,
+          "adult": false,
+          "eco": false,
+          "title": "Сельскохозяйственные животные",
+          "path": null,
+          "children": []
+        },
+        {
+          "id": 2550,
+          "productAmount": 2,
+          "adult": false,
+          "eco": false,
+          "title": "Лошади",
+          "path": null,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "error": null
+}
