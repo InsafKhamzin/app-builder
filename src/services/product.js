@@ -147,7 +147,8 @@ module.exports = class ProductService {
             const product = await Product.findOne({ app: appId, _id: productId })
                 .populate('images')
                 .populate('mainImage')
-                .populate('variants');
+                .populate('variants')
+                .populate('category');
                 
             if (!product) {
                 throw new ClientError('Product not found', 404);
