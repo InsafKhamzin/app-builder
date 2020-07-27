@@ -35,7 +35,11 @@ const ProductSchema = new Schema({
         type: Number,
         default: 0.0
     },
-    price: {
+    fullPrice: {
+        type: Number,
+        required: true
+    },
+    purchasePrice: {
         type: Number,
         required: true
     },
@@ -80,6 +84,12 @@ const ProductSchema = new Schema({
             value: {
                 type: String,
                 required: true
+            },
+            color: {
+                type: String
+            },
+            image: {
+                type: String
             }
         }]
     }],

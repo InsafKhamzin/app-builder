@@ -22,14 +22,13 @@ const productService = new ProductService();
 router.post('/', productAddValidation,
     async (req, res, next) => {
         try {
-            const { name, description, price, categoryId, mainImage, images, characteristics, variants } = req.body;
+            const { name, description, categoryId, mainImage, images, characteristics, variants } = req.body;
             const appId = req.params.appId
 
             const result = await productService.addProduct({
                 appId,
                 name,
                 description,
-                price,
                 categoryId,
                 mainImage,
                 images,
@@ -46,7 +45,7 @@ router.post('/', productAddValidation,
 router.put('/:productId', productAddValidation,
     async (req, res, next) => {
         try {
-            const { name, description, price, categoryId, mainImage, images, characteristics, variants } = req.body;
+            const { name, description, categoryId, mainImage, images, characteristics, variants } = req.body;
             const { appId, productId } = req.params;
 
             const result = await productService.updateProduct({
@@ -54,7 +53,6 @@ router.put('/:productId', productAddValidation,
                 productId,
                 name,
                 description,
-                price,
                 categoryId,
                 mainImage,
                 images,

@@ -6,7 +6,7 @@ const ClientError = require('../common/clientError');
 const mongoose = require('mongoose');
 
 module.exports = class ProductService {
-    async addProduct({ appId, name, description, price, categoryId, mainImage, images, characteristics, variants }) {
+    async addProduct({ appId, name, description, categoryId, mainImage, images, characteristics, variants }) {
         try {
             const category = await Category.findOne({ app: appId, _id: categoryId });
             if (!category) {
@@ -32,7 +32,7 @@ module.exports = class ProductService {
             });
 
             //min amount
-            const minAmount = variants.reduce(
+            const minPrice = variants.reduce(
                 (max, variant) => (parseInt(variant.price) > max ? parseInt(variant.price) : max),
                 parseInt(variants[0].price)
               );
@@ -45,7 +45,8 @@ module.exports = class ProductService {
                 category: category._id,
                 mainImage,
                 images,
-                price: minAmount,
+                fullPrice: minPrice,
+                purchasePrice: minPrice,
                 currency: 'RUB',
                 characteristics: characteristics,
                 variants: variantIds
@@ -73,7 +74,7 @@ module.exports = class ProductService {
         }
     }
 
-    async updateProduct({ appId, productId, name, description, price, categoryId, mainImage, images, characteristics, variants }) {
+    async updateProduct({ appId, productId, name, description, categoryId, mainImage, images, characteristics, variants }) {
         try {
             const product = await Product.findById(productId);
             if (!product) {
@@ -101,12 +102,17 @@ module.exports = class ProductService {
                 });
             });
 
+            const minPrice = variants.reduce(
+                (max, variant) => (parseInt(variant.price) > max ? parseInt(variant.price) : max),
+                parseInt(variants[0].price)
+              );
+
             product.name = name;
             product.description = description;
-            product.fullPrice = price;
-            product.purchasePrice = price;
             product.mainImage = mainImage;
             product.images = images;
+            product.fullPrice = minPrice,
+            product.purchasePrice = minPrice,
             product.characteristics = characteristics;
             product.variants = variantIds;
 
@@ -164,7 +170,7 @@ module.exports = class ProductService {
         try {
             const products = Product.find(
                 { app: appId },
-                '_id name totalQuantity totalOrders totalReviews rating category mainImage price')
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
                 .populate('mainImage', 'small')
                 .sort({ updatedAt: 'desc' });
 
@@ -178,7 +184,7 @@ module.exports = class ProductService {
     async getByCategory(appId, categoryId) {
         try {
             const products = Product.find({ app: appId, category: categoryId },
-                '_id name totalQuantity totalOrders totalReviews rating category mainImage price')
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
                 .populate('mainImage', 'small')
                 .sort({ updatedAt: 'desc' });
 
