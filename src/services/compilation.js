@@ -11,7 +11,9 @@ module.exports = class CompilationService {
             category: categoryId
         });
         await newCompilation.save();
-        return newCompilation;
+        const poplatedCompilation = await newCompilation.populate('image').execPopulate();
+
+        return poplatedCompilation;
     }
 
     async updateCompilation({ compilationId, name, description, imageId, categoryId }) {
@@ -25,7 +27,9 @@ module.exports = class CompilationService {
         compilation.category = categoryId;
 
         await compilation.save();
-        return compilation;
+        const poplatedCompilation = await compilation.populate('image').execPopulate();
+
+        return poplatedCompilation;
     }
 
     async deleteCompilation(compilationId) {
@@ -33,7 +37,7 @@ module.exports = class CompilationService {
     }
 
     async getCompilation(compilationId) {
-        const compilation = await Compilation.findById(compilationId);
+        const compilation = await Compilation.findById(compilationId).populate('image');
         if (!compilation) {
             throw new ClientError('Compilation not found', 404);
         }
