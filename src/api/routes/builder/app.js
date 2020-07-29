@@ -3,6 +3,7 @@ const router = express.Router();
 const AppService = require('../../../services/app');
 const { appIdValidation } = require('../../validators/appValidator');
 const auth = require('../../middlewares/auth');
+const { route } = require('./compilation');
 
 const appService = new AppService();
 
@@ -62,6 +63,11 @@ router.put('/:appId/link',
             next(error);
         }
     });
+
+router.get('/:appId/main', appIdValidation, async (req, res) =>{
+    const result = await appService.getMain(req.params.appId);
+    res.json(result);
+});
 
 
 module.exports = router;

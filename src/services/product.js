@@ -35,7 +35,7 @@ module.exports = class ProductService {
             const minPrice = variants.reduce(
                 (max, variant) => (parseInt(variant.price) > max ? parseInt(variant.price) : max),
                 parseInt(variants[0].price)
-              );
+            );
 
             const newProduct = new Product({
                 _id: newProductId,
@@ -105,15 +105,15 @@ module.exports = class ProductService {
             const minPrice = variants.reduce(
                 (max, variant) => (parseInt(variant.price) > max ? parseInt(variant.price) : max),
                 parseInt(variants[0].price)
-              );
+            );
 
             product.name = name;
             product.description = description;
             product.mainImage = mainImage;
             product.images = images;
             product.fullPrice = minPrice,
-            product.purchasePrice = minPrice,
-            product.characteristics = characteristics;
+                product.purchasePrice = minPrice,
+                product.characteristics = characteristics;
             product.variants = variantIds;
 
             const productUpdated = await product.save();
@@ -155,7 +155,7 @@ module.exports = class ProductService {
                 .populate('mainImage')
                 .populate('variants')
                 .populate('category');
-                
+
             if (!product) {
                 throw new ClientError('Product not found', 404);
             }
@@ -168,7 +168,7 @@ module.exports = class ProductService {
 
     async getAll(appId) {
         try {
-            const products = Product.find(
+            const products = await Product.find(
                 { app: appId },
                 '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
                 .populate('mainImage', 'small')
@@ -183,7 +183,7 @@ module.exports = class ProductService {
 
     async getByCategory(appId, categoryId) {
         try {
-            const products = Product.find({ app: appId, category: categoryId },
+            const products = await Product.find({ app: appId, category: categoryId },
                 '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
                 .populate('mainImage', 'small')
                 .sort({ updatedAt: 'desc' });
@@ -193,5 +193,34 @@ module.exports = class ProductService {
             logger.error(`ProductService getByCategory ex: ${error.message}`);
             throw error;
         }
+    }
+
+    async getNewProducts(appId, quantity) {
+        const products = await Product.find({ app: appId },
+            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+            .populate('mainImage', 'small')
+            .sort({ createdAt: 'desc' })
+            .limit(quantity);
+
+        return products;
+    }
+
+    async getPopularProducts(appId, quantity) {
+        const products = await Product.find({ app: appId },
+            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+            .populate('mainImage', 'small')
+            .sort({ totalOrders: 'desc', rating: 'desc' })
+            .limit(quantity);
+
+        return products;
+    }
+
+    async getSaleProducts(appId, quantity) {
+        const products = await Product.find({ app: appId, $expr: { $gt: ["$fullPrice", "$purchasePrice"] } },
+            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+            .populate('mainImage', 'small')
+            .limit(quantity);
+
+        return products;
     }
 }

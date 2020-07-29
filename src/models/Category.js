@@ -10,7 +10,8 @@ const CategorySchema = new Schema({
     app: {
         type: Schema.Types.ObjectId,
         ref: 'app',
-        required: true
+        required: true,
+        index: true
     },
     name: {
         type: String,

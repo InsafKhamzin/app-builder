@@ -8,6 +8,7 @@ const { appIdToUserValidation } = require('./api/validators/appValidator');
 
 
 const connectDb = require('./loaders/db');
+require('express-async-errors');
 
 const app = express();
 
@@ -36,6 +37,10 @@ if (currentApp === 'BUILDER' || currentApp ==='DEV') {
     app.use('/builder/app/:appId/category', authMiddleware);
     app.use('/builder/app/:appId/category', appIdToUserValidation);
     app.use('/builder/app/:appId/category', require('./api/routes/builder/category'));
+
+    app.use('/builder/app/:appId/compilation', authMiddleware);
+    app.use('/builder/app/:appId/compilation', appIdToUserValidation);
+    app.use('/builder/app/:appId/compilation', require('./api/routes/builder/compilation'));
 
     app.use('/builder/image', require('./api/routes/builder/image'));
 }

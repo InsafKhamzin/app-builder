@@ -3,6 +3,11 @@ const App = require('../models/App');
 const Category = require('../models/Category')
 const ClientError = require('../common/clientError');
 const { getDefaultCategoryTree } = require('../utils/categoryTree');
+const CompilationService = require('./compilation');
+const ProductService = require('./product');
+
+const compilationService = new CompilationService();
+const productService = new ProductService();
 
 module.exports = class AppService {
 
@@ -68,5 +73,19 @@ module.exports = class AppService {
         } catch (error) {
             throw error;
         }
+    }
+
+    async getMain(appId){
+        const compilations = await compilationService.getCompilations(appId);
+        const newProducts = await productService.getNewProducts(appId, 20);
+        const popularProducts = await productService.getPopularProducts(appId, 20);
+        const saleProducts = await productService.getSaleProducts(appId, 20);
+
+        return {
+            compilations,
+            newProducts,
+            popularProducts,
+            saleProducts
+        };
     }
 }
