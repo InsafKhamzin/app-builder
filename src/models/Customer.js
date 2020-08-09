@@ -2,10 +2,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const CustomerSchema = new Schema({
+    app: {
+        type: Schema.Types.ObjectId,
+        ref: 'app',
+        index: true
+    },
     email: {
         type: String,
         required: true,
-        unique: true
     },
     password: {
         type: String,
@@ -20,14 +24,6 @@ const CustomerSchema = new Schema({
     avatar: {
         type: String
     },
-    date: {
-        type: Date,
-        default: Date.now
-    },
-    app: {
-        type: Schema.Types.ObjectId,
-        ref: 'app'
-    },
     refreshTokens: [
         {
             refreshToken: {
@@ -41,7 +37,8 @@ const CustomerSchema = new Schema({
             expiresAt: {
                 type: Date,
                 required: true
-            }
+            },
+            _id: false
         }
     ]
 },

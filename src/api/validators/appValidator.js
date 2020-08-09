@@ -7,6 +7,20 @@ module.exports.appIdValidation = [
     validate
 ];
 
+module.exports.appIdValidationDb = [
+    param('appId', 'Invalid app id')
+    .isMongoId()
+    .bail()
+    .custom(async (appId) => {
+        const app = await App.findById(appId);
+        if(!app){
+            throw new Error('Invalid app id');
+        }
+        return true;
+    }),
+    validate
+];
+
 //use after auth middleware
 module.exports.appIdToUserValidation = [
     param('appId', 'Invalid app id')
@@ -22,9 +36,11 @@ module.exports.appIdToUserValidation = [
                 //if empty check in database
                 app = await App.find({ _id: appId, user: userId });
             }
+            //if still empty then throw ex
             if (!app) {
                 throw new Error('Invalid app id')
             }
+            return true;
         }),
     validate
 ]; 

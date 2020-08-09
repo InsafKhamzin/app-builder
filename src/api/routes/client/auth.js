@@ -1,55 +1,29 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
-const { check, param, validationResult } = require('express-validator');
-const AuthService = require('../../../services/authCustomer');
+const CustomerAuthService = require('../../../services/authCustomer');
 const auth = require('../../middlewares/auth');
+const { registerValidation, loginValidation, tokenValidation } = require('../../validators/authValidator');
 
-const authService = new AuthService();
+const authService = new CustomerAuthService();
 
 // @route POST auth/register
 // @desc register customer
 
 router.post('/register',
-    [
-        param('appId').isMongoId(),
-        check('email', 'Invalid email format').isEmail(),
-        check('password', 'Password is required').notEmpty()
-    ],
-    async (req, res, next) => {
-        try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({ errors: errors.array() });
-            }
-
-            const result = await authService.registerUser(req.body);
-            res.json(result);
-        } catch (error) {
-            next(error);
-        }
+    registerValidation,
+    async (req, res) => {
+        const result = await authService.registerCustomer(req.body);
+        res.json(result);
     });
-
 
 // @route POST auth/login
 // @desc login user
 
 router.post('/login',
-    [
-        check('email', 'Invalid email format').isEmail(),
-        check('password', 'Password is required').notEmpty()
-    ],
-    async (req, res, next) => {
-        try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({ errors: errors.array });
-            }
-
-            const result = await authService.loginUser(req.body);
-            res.json(result);
-        } catch (error) {
-            next(error);
-        }
+    loginValidation,
+    async (req, res) => {
+        const result = await authService.loginCustomer(req.body);
+        res.json(result);
     });
 
 // @route PUT auth/refresh
@@ -58,23 +32,13 @@ router.post('/login',
 router.put('/refresh',
     [
         auth,
-        check('refreshToken', 'Refresh token is required').notEmpty(),
+        tokenValidation
     ],
-    async (req, res, next) => {
-        try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({ errors: errors.array() });
-            }
-
-            const { refreshToken } = req.body;
-            const userId = req.user.id;
-
-            const result = await authService.refresh({ refreshToken, userId });
-            res.json(result);
-        } catch (error) {
-            next(error);
-        }
+    async (req, res) => {
+        const { refreshToken } = req.body;
+        const customerId = req.user.id;
+        const result = await authService.refresh({ refreshToken, customerId });
+        res.json(result);
     });
 
 // @route DELETE auth/revoke
@@ -83,24 +47,14 @@ router.put('/refresh',
 router.delete('/revoke',
     [
         auth,
-        check('refreshToken', 'Refresh token is required').notEmpty(),
+        tokenValidation
     ],
-    async (req, res, next) => {
-        try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({ errors: errors.array() });
-            }
+    async (req, res) => {
+        const { refreshToken } = req.body;
+        const customerId = req.user.id;
 
-            const { refreshToken } = req.body;
-            const userId = req.user.id;
-
-            await authService.revokeToken({ refreshToken, userId });
-            res.status(200).send();
-        } catch (error) {
-            next(error);
-        }
+        await authService.revokeToken({ refreshToken, customerId });
+        res.status(200).send();
     });
-
 
 module.exports = router;

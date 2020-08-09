@@ -4,7 +4,7 @@ const errorMiddleware = require('./api/middlewares/serverError');
 const notFoundMiddleware = require('./api/middlewares/notFoundMiddleware');
 const authMiddleware = require('./api/middlewares/auth');
 const config = require('config');
-const { appIdToUserValidation } = require('./api/validators/appValidator');
+const { appIdToUserValidation, appIdValidationDb } = require('./api/validators/appValidator');
 
 
 const connectDb = require('./loaders/db');
@@ -44,9 +44,15 @@ if (currentApp === 'BUILDER' || currentApp ==='DEV') {
 
     app.use('/builder/image', require('./api/routes/builder/image'));
 }
+
 if (currentApp === 'CLIENT' || currentApp ==='DEV') {
     //CLIENT ROUTES
+    app.use('/client/:appId', appIdValidationDb);
+
     app.use('/client/:appId/auth', require('./api/routes/client/auth'));
+    app.use('/client/:appId/main', require('./api/routes/client/main'));
+    app.use('/client/:appId/product', require('./api/routes/client/product'));
+    app.use('/client/:appId/category', require('./api/routes/client/category'));
 }
 
 //global middlewares
