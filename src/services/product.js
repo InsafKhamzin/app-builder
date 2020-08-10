@@ -23,7 +23,7 @@ module.exports = class ProductService {
                 variantIds.push(newVariantId);
                 return new ProductVariant({
                     _id: newVariantId,
-                    productId: newProductId,
+                    product: newProductId,
                     quantity: variant.quantity,
                     fullPrice: variant.price,
                     purchasePrice: variant.price,
@@ -94,7 +94,7 @@ module.exports = class ProductService {
                 variantIds.push(newVariantId);
                 return new ProductVariant({
                     _id: newVariantId,
-                    productId: product._id,
+                    product: product._id,
                     quantity: variant.quantity,
                     fullPrice: variant.price,
                     purchasePrice: variant.price,

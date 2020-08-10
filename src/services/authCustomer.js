@@ -8,7 +8,7 @@ const _object = require('lodash/object');
 
 
 module.exports = class CustomerAuthService {
-    async registerCustomer({ email, password, app, firstName, lastName }) {
+    async registerCustomer({ app, email, password, firstName, lastName }) {
         let customer = await Customer.findOne({ app, email });
         if (customer) {
             throw new ClientError('Customer already exists', 400);
@@ -40,7 +40,7 @@ module.exports = class CustomerAuthService {
         };
     }
 
-    async loginCustomer({ email, password, app }) {
+    async loginCustomer({ app, email, password }) {
         let customer = await Customer.findOne({ app, email });
         if (!customer) {
             throw new ClientError('Invalid credentials', 400);

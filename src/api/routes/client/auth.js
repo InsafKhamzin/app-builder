@@ -12,7 +12,8 @@ const authService = new CustomerAuthService();
 router.post('/register',
     registerValidation,
     async (req, res) => {
-        const result = await authService.registerCustomer(req.body);
+        const app = req.params.appId
+        const result = await authService.registerCustomer({ app, ...req.body });
         res.json(result);
     });
 
@@ -22,7 +23,8 @@ router.post('/register',
 router.post('/login',
     loginValidation,
     async (req, res) => {
-        const result = await authService.loginCustomer(req.body);
+        const app = req.params.appId
+        const result = await authService.loginCustomer({ app, ...req.body });
         res.json(result);
     });
 

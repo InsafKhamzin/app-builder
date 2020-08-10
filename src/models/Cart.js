@@ -3,8 +3,7 @@ const { Neptune } = require('aws-sdk');
 const Schema = mongoose.Schema;
 
 const CartSchema = new Schema({
-    _id: false,
-    user: {
+    customer: {
         type: Schema.Types.ObjectId,
         required: true,
         ref: 'customer',
@@ -16,7 +15,7 @@ const CartSchema = new Schema({
             required: true,
             ref: 'product_variant'
         },
-        count: {
+        quantity: {
             type: Number,
             required: true
         }

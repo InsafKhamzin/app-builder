@@ -1,4 +1,4 @@
-const { body, param, query, oneOf } = require('express-validator');
+const { body, param, query } = require('express-validator');
 const { validate } = require('./validate');
 
 module.exports.productAddValidation = [
