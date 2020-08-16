@@ -8,7 +8,7 @@ const _object = require('lodash/object');
 
 
 module.exports = class CustomerAuthService {
-    async registerCustomer({ app, email, password, firstName, lastName }) {
+    async registerCustomer({ app, email, password, firstName, lastName, phone }) {
         let customer = await Customer.findOne({ app, email });
         if (customer) {
             throw new ClientError('Customer already exists', 400);
@@ -18,7 +18,8 @@ module.exports = class CustomerAuthService {
             password,
             app,
             firstName,
-            lastName
+            lastName,
+            phone
         });
         const salt = await bcrypt.genSalt();
         customer.password = await bcrypt.hash(password, salt);
@@ -36,7 +37,7 @@ module.exports = class CustomerAuthService {
         return {
             token,
             refreshToken,
-            customer: _object.pick(customer, ['_id', 'email', 'firstName', 'lastName'])
+            customer: _object.pick(customer, ['_id', 'email', 'firstName', 'lastName', 'phone'])
         };
     }
 
@@ -63,7 +64,7 @@ module.exports = class CustomerAuthService {
         return {
             token,
             refreshToken,
-            customer: _object.pick(customer, ['_id', 'email', 'firstName', 'lastName'])
+            customer: _object.pick(customer, ['_id', 'email', 'firstName', 'lastName', 'phone'])
         };
     }
 

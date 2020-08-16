@@ -170,8 +170,9 @@ module.exports = class ProductService {
         try {
             const products = await Product.find(
                 { app: appId },
-                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice images')
                 .populate('mainImage', 'small')
+                .populate('images', 'small')
                 .sort({ updatedAt: 'desc' });
 
             return products;
@@ -184,8 +185,9 @@ module.exports = class ProductService {
     async getByCategory(appId, categoryId) {
         try {
             const products = await Product.find({ app: appId, category: categoryId },
-                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice images')
                 .populate('mainImage', 'small')
+                .populate('images', 'small')
                 .sort({ updatedAt: 'desc' });
 
             return products;
@@ -197,8 +199,9 @@ module.exports = class ProductService {
 
     async getNewProducts(appId, quantity) {
         const products = await Product.find({ app: appId },
-            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice images')
             .populate('mainImage', 'small')
+            .populate('images', 'small')
             .sort({ createdAt: 'desc' })
             .limit(quantity);
 
@@ -207,8 +210,9 @@ module.exports = class ProductService {
 
     async getPopularProducts(appId, quantity) {
         const products = await Product.find({ app: appId },
-            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice images')
             .populate('mainImage', 'small')
+            .populate('images', 'small')
             .sort({ totalOrders: 'desc', rating: 'desc' })
             .limit(quantity);
 
@@ -217,8 +221,9 @@ module.exports = class ProductService {
 
     async getSaleProducts(appId, quantity) {
         const products = await Product.find({ app: appId, $expr: { $gt: ["$fullPrice", "$purchasePrice"] } },
-            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice')
+            '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice images')
             .populate('mainImage', 'small')
+            .populate('images', 'small')
             .limit(quantity);
 
         return products;

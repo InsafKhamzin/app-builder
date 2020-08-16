@@ -9,7 +9,7 @@ const { createToken, createRefresh } = require('../utils/token');
 
 
 module.exports = class AuthService {
-    async registerUser({ email, password, firstName, lastName }) {
+    async registerUser({ email, password, firstName, lastName, phone }) {
         try {
             let user = await User.findOne({ email });
             if (user) {
@@ -19,7 +19,8 @@ module.exports = class AuthService {
                 email,
                 password,
                 firstName,
-                lastName
+                lastName,
+                phone
             });
             const salt = await bcrypt.genSalt();
             user.password = await bcrypt.hash(password, salt);
@@ -38,7 +39,7 @@ module.exports = class AuthService {
             return {
                 token,
                 refreshToken,
-                user: _object.pick(newUser, ['_id', 'email', 'firstName', 'lastName']),
+                user: _object.pick(newUser, ['_id', 'email', 'firstName', 'lastName', 'phone']),
             }
         } catch (error) {
             logger.error(`AuthService registerUser ex: ${error.message}`);
@@ -74,7 +75,7 @@ module.exports = class AuthService {
             return {
                 token,
                 refreshToken,
-                user: _object.pick(user, ['_id', 'email', 'firstName', 'lastName']),
+                user: _object.pick(user, ['_id', 'email', 'firstName', 'lastName', 'phone']),
                 apps
             };
         } catch (error) {
@@ -138,7 +139,7 @@ module.exports = class AuthService {
 
     async getUser(userId) {
         try {
-            const user = await User.findById(userId, '_id email firstName lastName');
+            const user = await User.findById(userId, '_id email firstName lastName phone');
             return user;
         } catch (error) {
             logger.error(`AuthService getUser ex: ${error.message}`);

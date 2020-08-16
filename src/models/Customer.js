@@ -24,6 +24,9 @@ const CustomerSchema = new Schema({
     avatar: {
         type: String
     },
+    phone:{
+        type: String
+    },
     refreshTokens: [
         {
             refreshToken: {
