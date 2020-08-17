@@ -2,6 +2,7 @@ const logger = require('../utils/logger');
 const Product = require('../models/Product');
 const ProductVariant = require('../models/ProductVariant');
 const Category = require('../models/Category');
+const Customer = require('../models/Customer');
 const ClientError = require('../common/clientError');
 const mongoose = require('mongoose');
 
@@ -227,5 +228,36 @@ module.exports = class ProductService {
             .limit(quantity);
 
         return products;
+    }
+
+    async toggleFavorite(appId, customerId, productId) {
+        const product = await Product.find({ app: appId, _id: productId });
+        if (!product) {
+            throw new ClientError('Product not found');
+        }
+        const customer = await Customer.findById(customerId);
+        if (!customer.favorites) {
+            customer.favorites = [];
+        }
+        const favoriteExistIdx = customer.favorites.findIndex(fav => fav.toString() === productId);
+        if (favoriteExistIdx === -1) {
+            customer.favorites.push(productId);
+        } else {
+            customer.favorites.splice(favoriteExistIdx, 1);
+        }
+        await customer.save();
+
+        const customerPopulated = await customer
+            .populate('favorites',
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice images')
+            .execPopulate();
+        return customerPopulated.favorites;
+    }
+
+    async getFavorites(customerId) {
+        const customer = await Customer.findById(customerId)
+            .populate('favorites',
+                '_id name totalQuantity totalOrders totalReviews rating category mainImage fullPrice purchasePrice images');
+        return customer.favorites || [];
     }
 }

@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
 const ProductService = require('../../../services/product');
+const auth = require('../../middlewares/auth');
 
 const {
     productIdValidation,
@@ -34,6 +35,21 @@ router.get('/', productGetByCategoryValidation,
         } else {
             result = await productService.getAll(appId);
         }
+        res.json(result);
+    });
+
+router.post('/favorite/:productId', [auth, productIdValidation],
+    async (req, res) => {
+        const { appId, productId } = req.params;
+        const customerId = req.user.id;
+        const result = await productService.toggleFavorite(appId, customerId, productId);
+        res.json(result);
+    });
+
+router.get('/favorite/get', auth,
+    async (req, res) => {
+        const customerId = req.user.id;
+        const result = await productService.getFavorites(customerId);
         res.json(result);
     });
 

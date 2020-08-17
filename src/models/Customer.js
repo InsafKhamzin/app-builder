@@ -24,7 +24,7 @@ const CustomerSchema = new Schema({
     avatar: {
         type: String
     },
-    phone:{
+    phone: {
         type: String
     },
     refreshTokens: [
@@ -43,7 +43,11 @@ const CustomerSchema = new Schema({
             },
             _id: false
         }
-    ]
+    ],
+    favorites: [{
+        type: Schema.Types.ObjectId,
+        ref: 'product',
+    }]
 },
     {
         timestamps: true
