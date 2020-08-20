@@ -68,3 +68,8 @@ connectDb()
         //start app
         app.listen(PORT, () => logger.info('Server is runnning on port ' + PORT));
     });
+
+process.on('uncaughtException', (err) => {
+    logger.crit('There was an uncaught error', err)
+    process.exit(1)
+})
