@@ -1,6 +1,5 @@
 const { body, param } = require('express-validator');
 const { validate } = require('./validate');
-const Category = require('../../models/Category');
 
 module.exports.categoryAddValidation = [
     body('name', 'Name is required').notEmpty(),

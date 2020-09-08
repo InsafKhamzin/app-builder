@@ -3,7 +3,6 @@ const router = express.Router();
 const AppService = require('../../../services/app');
 const { appIdValidation } = require('../../validators/appValidator');
 const auth = require('../../middlewares/auth');
-const { route } = require('./compilation');
 
 const appService = new AppService();
 
