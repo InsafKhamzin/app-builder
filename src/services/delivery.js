@@ -62,6 +62,7 @@ module.exports = class DeliveryService {
         delivery.description = deliveryInfo.description;
         delivery.price = deliveryInfo.price;
         delivery.freeFrom = deliveryInfo.freeFrom;
+        delivery.period = deliveryInfo.period;
         
         await delivery.save();
         return this.getDelivery(appId);

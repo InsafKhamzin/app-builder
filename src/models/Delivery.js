@@ -15,6 +15,9 @@ const DeliverySchema = new Schema({
     description: {
         type: String
     },
+    period: {
+        type: String
+    },
     price: {
         type: Number,
         required: true
