@@ -11,3 +11,15 @@ module.exports.pickupIdValidator = [
     param('pickupId', 'Invalid pickup id').isMongoId(),
     validate
 ];
+
+module.exports.deliveryAddValidator = [
+    body('name', 'Invalid name').notEmpty(),
+    body('price', 'Invalid price').isNumeric(),
+    body('freeFrom', 'Invalid freeFrom').optional().isNumeric(),
+    validate
+];
+
+module.exports.deliveryIdValidator = [
+    param('deliveryId', 'Invalid delivery id').isMongoId(),
+    validate
+];

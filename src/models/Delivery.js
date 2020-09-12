@@ -8,19 +8,18 @@ const DeliverySchema = new Schema({
         index: true,
         required: true
     },
-    type: {
+    name: {
         type: String,
-        enum: ['city','country'],
         required: true
     },
-    name: {
+    description: {
         type: String
     },
     price: {
         type: Number,
         required: true
     },
-    freeDelivery:{
+    freeFrom: {
         type: Number
     }
 });
