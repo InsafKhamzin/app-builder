@@ -57,6 +57,7 @@ if (currentApp === 'CLIENT' || currentApp ==='DEV') {
     app.use('/client/:appId/main', require('./api/routes/client/main'));
     app.use('/client/:appId/product', require('./api/routes/client/product'));
     app.use('/client/:appId/category', require('./api/routes/client/category'));
+    app.use('/client/:appId/delivery', require('./api/routes/client/delivery'));
 
     app.use('/client/:appId/cart', authMiddleware);
     app.use('/client/:appId/cart', require('./api/routes/client/cart'));
