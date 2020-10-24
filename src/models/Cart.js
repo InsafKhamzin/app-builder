@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { Neptune } = require('aws-sdk');
 const Schema = mongoose.Schema;
 
 const CartSchema = new Schema({
@@ -21,9 +20,6 @@ const CartSchema = new Schema({
         },
         _id: false
     }]
-},
-    {
-        timestamps: true
-    });
+});
 
 module.exports = Cart = mongoose.model('cart', CartSchema)

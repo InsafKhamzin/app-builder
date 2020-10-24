@@ -61,6 +61,9 @@ if (currentApp === 'CLIENT' || currentApp ==='DEV') {
 
     app.use('/client/:appId/cart', authMiddleware);
     app.use('/client/:appId/cart', require('./api/routes/client/cart'));
+
+    app.use('/client/:appId/order', authMiddleware);
+    app.use('/client/:appId/order', require('./api/routes/client/order'));
 }
 
 //global middlewares
