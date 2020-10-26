@@ -47,14 +47,30 @@ module.exports = class OrderService {
         return newOrderPopulated;
     }
 
-    async delete({ customerId, orderId }) {
-        const order = await Order.find({ _id: orderId, customer: customerId });
+    async getAllCustomer(customerId) {
+        const orders = await Order.find({ customer: customerId }).sort([['createdAt', 'desc']])
+            .populate('pickup')
+            .populate('delivery')
+            .populate({ path: 'items.productVariant', populate: { path: 'product', populate: { path: 'mainImage' } } });
+        return orders || [];
+    }
+
+    async getById(orderId) {
+        const order = await Order.findById(orderId)
+            .populate('pickup')
+            .populate('delivery')
+            .populate({ path: 'items.productVariant', populate: { path: 'product', populate: { path: 'mainImage' } } });;
         if (!order) {
             throw new ClientError('Order not found', 404);
         }
-        if (order.status !== 'new') {
-            throw new ClientError('Wrong status of order', 400);
+        return order;
+    }
+
+    async setStatus(orderId, status){
+        const order = await Order.findById(orderId);
+        if (!order) {
+            throw new ClientError('Order not found', 404);
         }
-        await Order.findByIdAndDelete(orderId);
+        
     }
 }

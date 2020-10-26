@@ -44,7 +44,7 @@ module.exports = class CategoryService {
 
     async get(customerId) {
         const cart = await Cart.findOne({ customer: customerId })
-            .populate({ path: 'items.productVariant', populate: { path: 'product' } });
+            .populate({ path: 'items.productVariant', populate: { path: 'product', populate : {path: 'mainImage'} } });
         if (cart) {
             return cart.items;
         }

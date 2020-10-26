@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
 const OrderService = require('../../../services/order');
-const { orderAddValidation } = require('../../validators/orderValidator')
+const { orderAddValidation, orderIdValidation } = require('../../validators/orderValidator')
 
 const orderService = new OrderService();
 
@@ -15,6 +15,20 @@ router.post('/',
             customerId,
             orderInfo: req.body
         })
+        res.json(result);
+    });
+
+router.get('/',
+    async (req, res) => {
+        const customerId = req.user.id;
+        const result = await orderService.getAllCustomer(customerId);
+        res.json(result);
+    });
+
+router.get('/:orderId',
+    orderIdValidation,
+    async (req, res) => {
+        const result = await orderService.getById(req.params.orderId);
         res.json(result);
     });
 
