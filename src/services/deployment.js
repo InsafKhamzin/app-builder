@@ -21,6 +21,7 @@ module.exports = class DeploymentService {
             var screensUrls = deployment.screenshots.map(screen=>screen.original).join('\n');
 
             const msg = `Deployment request...\n`+
+            `App Id: ${appId}\n`+
             `App Name: ${name}\n`+
             `Description: ${description}\n`+
             `Icon:\n${deployment.icon.original}\n`+
