@@ -46,6 +46,10 @@ if (currentApp === 'BUILDER' || currentApp ==='DEV') {
     app.use('/builder/app/:appId/delivery', appIdToUserValidation);
     app.use('/builder/app/:appId/delivery', require('./api/routes/builder/delivery'));
 
+    app.use('/builder/app/:appId/deployment', authMiddleware);
+    app.use('/builder/app/:appId/deployment', appIdToUserValidation);
+    app.use('/builder/app/:appId/deployment', require('./api/routes/builder/deployment'));
+
     app.use('/builder/image', require('./api/routes/builder/image'));
 }
 
