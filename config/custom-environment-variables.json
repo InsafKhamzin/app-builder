@@ -12,5 +12,7 @@
     "imageUpload": {
         "maxSizeMb": "IMAGE_UPLOAD_SIZE",
         "allowedTypesRegex": "IMAGE_UPLOAD_TYPE_REGEX"
-    }
+    },
+    "botToken":"BOT_TOKEN",
+    "botChatId":"BOT_CHATID"
 }
